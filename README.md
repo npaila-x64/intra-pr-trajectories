@@ -42,8 +42,9 @@ figuras/
 ```
 
 Los clones de los repositorios (`datos/repos/`, ~560 MB) y los archivos materializados de cada
-estado (`datos/estados/`, ~90 MB) no se versionan: el paso 3 los regenera, y Zenodo incluye
-`estados.zip` para ejecutar solo el paso 4.
+estado (`datos/estados/`, ~90 MB) no se distribuyen, porque contienen código fuente completo de
+proyectos de terceros bajo sus propias licencias (véase *Licencias*); el paso 3 los regenera
+desde GitHub.
 
 ## Requisitos
 
@@ -58,7 +59,7 @@ uv sync
 
 ## Reproducción
 
-### Opción A: desde el dataset (unos 12 minutos)
+### Pipeline completo (unos 12 minutos)
 
 ```sh
 uv run python scripts/seleccionar_candidatos.py    # ~30 s
@@ -68,15 +69,9 @@ uv run python scripts/analizar.py                  # segundos
 uv run python scripts/figura_hangar.py             # Figura 1
 ```
 
-### Opción B: solo el análisis
-
-Descomprima `estados.zip` desde Zenodo en `datos/` (crea `datos/estados/`) y ejecute:
-
-```sh
-uv run python scripts/analizar.py
-```
-
-`analizar.py` conserva las respuestas de auditoría ya registradas en `datos/resultados/`.
+`analizar.py` requiere los estados materializados por el paso 3 y conserva las respuestas de
+auditoría ya registradas en `datos/resultados/`. Se comprobó que una ejecución completa desde
+una copia limpia reproduce byte a byte los archivos de `datos/`.
 
 ## Resultados por pregunta
 
@@ -124,3 +119,12 @@ preguntas, y auditoría sobre la muestra piloto.
 **Pendiente:** detectar traslados de código entre clases, validar la etapa de misma entidad con
 una muestra nueva, ampliar la muestra a 100–200 PRs, y distinguir los commits del agente de los
 humanos.
+
+## Licencias
+
+- **Código** (`scripts/`, `config/`): MIT, véase `LICENSE`.
+- **Datos derivados** (`datos/`, `figuras/`): CC BY 4.0. Provienen de AIDev (CC BY 4.0) y de
+  repositorios públicos de GitHub.
+- **Fragmentos de código de terceros** incluidos en `datos/mediciones/hallazgos.csv` y en las
+  planillas de auditoría conservan la licencia de su repositorio de origen.
+

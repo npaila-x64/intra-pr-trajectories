@@ -338,7 +338,7 @@ def excursiones(serie):
 def main():
     if not (DATOS / 'estados').is_dir():
         raise SystemExit('Faltan los estados materializados en datos/estados/: ejecute '
-                         'scripts/medir_estados.py o descomprima estados.zip desde Zenodo.')
+                         'scripts/medir_estados.py.')
     RES.mkdir(exist_ok=True)
     trayectorias = json.loads((DATOS / 'trayectorias.json').read_text())
     metricas, hallazgos, estados = leer('metricas'), leer('hallazgos'), leer('estados')
