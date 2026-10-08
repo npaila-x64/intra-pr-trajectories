@@ -6,8 +6,10 @@ preliminares). Contiene la implementación mínima que reconstruye
 las trayectorias de pull requests (PRs) asociados a agentes, mide cada estado con PMD, y
 analiza las tres preguntas de investigación sobre una muestra piloto de 25 PRs.
 
-- **Versión de esta entrega:** etiqueta [`v0.2-etapa2`](https://github.com/npaila-x64/intra-pr-trajectories/tree/v0.2-etapa2)
-- **Zenodo:** [10.5281/zenodo.23229081](https://doi.org/10.5281/zenodo.23229081)
+- **Versión de esta entrega:** etiqueta [`v0.2.1-etapa2`](https://github.com/npaila-x64/intra-pr-trajectories/tree/v0.2.1-etapa2)
+- **Zenodo:** [10.5281/zenodo.23230281](https://doi.org/10.5281/zenodo.23230281). Reemplaza a
+  `v0.2-etapa2` ([10.5281/zenodo.23229081](https://doi.org/10.5281/zenodo.23229081)), cuyo
+  análisis requería repetir la extracción.
 
 ## Preguntas de investigación
 
