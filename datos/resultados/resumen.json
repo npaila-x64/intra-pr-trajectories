@@ -1,0 +1,64 @@
+{
+  "prs_reconstruidos": 25,
+  "prs_excluidos_menos_de_tres_estados_distintos": 0,
+  "prs": 25,
+  "estados_originales": 195,
+  "estados": 128,
+  "prs_medibles": 25,
+  "rq1_formas": {
+    "ncss": {
+      "no_monotona": 12,
+      "estable": 5,
+      "monotona": 8
+    },
+    "ciclomatica": {
+      "no_monotona": 10,
+      "estable": 3,
+      "monotona": 12
+    },
+    "hallazgos": {
+      "estable": 7,
+      "no_monotona": 5,
+      "monotona": 13
+    }
+  },
+  "rq2_categorias": {
+    "persistente": 1059,
+    "eliminado": 55,
+    "introducido": 40,
+    "transitorio": 14,
+    "indeterminado": 8
+  },
+  "rq2_causas": {
+    "entidad_eliminada": 12,
+    "diagnostico_desaparece": 57,
+    "ambiguo": 3
+  },
+  "rq2_enlaces": {
+    "exacta": 5229,
+    "movido": 5,
+    "orden_en_entidad": 4,
+    "misma_entidad": 13,
+    "renombrado": 4
+  },
+  "rq2_por_regla": {
+    "AvoidDeeplyNestedIfStmts": 409,
+    "CognitiveComplexity": 274,
+    "AvoidReassigningParameters": 157,
+    "NPathComplexity": 90,
+    "CollapsibleIfStatements": 83,
+    "UnusedPrivateField": 68,
+    "EmptyCatchBlock": 26,
+    "SimplifyBooleanReturns": 23,
+    "ExcessiveParameterList": 17,
+    "UnusedFormalParameter": 15,
+    "UnusedLocalVariable": 14
+  },
+  "rq3_prs_con_excursion": {
+    "ncss": 8,
+    "ciclomatica": 8,
+    "hallazgos": 5
+  },
+  "rq3_prs_con_transitorios": 6,
+  "rq3_prs_con_sustitucion": 2
+}

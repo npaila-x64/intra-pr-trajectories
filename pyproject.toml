@@ -1,0 +1,11 @@
+[project]
+name = "etapa2-intra-pr"
+version = "0.1.0"
+description = "Implementación mínima: evolución intra-PR de métricas y hallazgos de PMD"
+requires-python = ">=3.11"
+dependencies = [
+    "pyarrow>=17",
+    "fsspec>=2024.6",
+    "aiohttp>=3.9",
+    "requests>=2.32",
+]

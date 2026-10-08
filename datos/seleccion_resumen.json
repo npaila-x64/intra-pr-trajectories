@@ -1,0 +1,18 @@
+{
+  "consultado_utc": "2026-10-08T03:15:48.224193+00:00",
+  "revision": "37bbe1533e26cc1e1374917dba1186d1c8a4dc81",
+  "corte": "2026-04-01",
+  "semilla": 760,
+  "repos_java": 909,
+  "prs_integrados": 7447,
+  "prs_dos_o_mas_commits": 3332,
+  "prs_dos_o_mas_commits_java_produccion": 1022,
+  "por_agente": {
+    "Claude_Code": 52,
+    "Copilot": 700,
+    "Cursor": 15,
+    "Devin": 3,
+    "Google_Jules": 43,
+    "OpenAI_Codex": 209
+  }
+}

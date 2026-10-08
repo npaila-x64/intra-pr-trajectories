@@ -1,0 +1,1486 @@
+[
+ {
+  "orden": "1",
+  "pr_id": 3940935974,
+  "repo": "langchain4j/langchain4j",
+  "numero": 4584,
+  "agente": "OpenAI_Codex",
+  "merged_at": "2026-02-25T07:57:27Z",
+  "commits": "6",
+  "commits_java_produccion": "6",
+  "base": "506a3914e4ddfb947a8f2a3ca267c499e10cdcc3",
+  "secuencia": [
+   "7c3388df971402a40c74996e348c8ec5d2648d05",
+   "d3ae32413afa766077a861b794779117f96cb501",
+   "8f9b96d62ad809fff9630272ddd209a41880c154",
+   "4ecc1ae38e348d7ba53ad2a822380dc510102421",
+   "108e3cca56e19cfb31b0a324bc818924a296cb7e",
+   "e73bbb9ad1fe20ecc940fcfbf961f004826d6ed6"
+  ],
+  "cambios_java": {
+   "7c3388df971402a40c74996e348c8ec5d2648d05": [
+    "langchain4j-mcp/src/main/java/dev/langchain4j/mcp/client/transport/http/StreamableHttpMcpTransport.java"
+   ],
+   "d3ae32413afa766077a861b794779117f96cb501": [
+    "langchain4j-mcp/src/main/java/dev/langchain4j/mcp/client/transport/http/StreamableHttpMcpTransport.java"
+   ],
+   "8f9b96d62ad809fff9630272ddd209a41880c154": [
+    "langchain4j-mcp/src/main/java/dev/langchain4j/mcp/client/transport/http/StreamableHttpMcpTransport.java"
+   ],
+   "4ecc1ae38e348d7ba53ad2a822380dc510102421": [
+    "langchain4j-http-client/src/main/java/dev/langchain4j/http/client/HttpVersion.java",
+    "langchain4j-mcp/src/main/java/dev/langchain4j/mcp/client/transport/http/StreamableHttpMcpTransport.java"
+   ],
+   "108e3cca56e19cfb31b0a324bc818924a296cb7e": [
+    "langchain4j-http-client/src/main/java/dev/langchain4j/http/client/HttpVersion.java",
+    "langchain4j-mcp/src/main/java/dev/langchain4j/mcp/client/transport/http/StreamableHttpMcpTransport.java"
+   ],
+   "e73bbb9ad1fe20ecc940fcfbf961f004826d6ed6": [
+    "langchain4j-mcp/src/main/java/dev/langchain4j/mcp/client/transport/http/StreamableHttpMcpTransport.java"
+   ]
+  },
+  "alcance": [
+   "langchain4j-http-client/src/main/java/dev/langchain4j/http/client/HttpVersion.java",
+   "langchain4j-mcp/src/main/java/dev/langchain4j/mcp/client/transport/http/StreamableHttpMcpTransport.java"
+  ]
+ },
+ {
+  "orden": "2",
+  "pr_id": 3751098999,
+  "repo": "binarywang/WxJava",
+  "numero": 3817,
+  "agente": "Copilot",
+  "merged_at": "2025-12-21T13:54:43Z",
+  "commits": "10",
+  "commits_java_produccion": "3",
+  "base": "e3463a0adfe0cb8d4111f751c5ff68b18f68fca8",
+  "secuencia": [
+   "65c9aa260e4b592fef09115747b0245beae58a47",
+   "dccb214cb30798acd3d8d7a1906490e5f418b901",
+   "6a76a798ee798df7caa65a2061f98a7038aa1f1e",
+   "5b41f4960615ea8405a7fa75a55942442ec8a84a",
+   "b70a4637b3fd33b8830e0c2f60a45af2785a179f",
+   "f08b30e022226b9d1c8de6d102418ff8502a4f82",
+   "00040b63f46553c536c3b817ad8f8e43e8eba288",
+   "037a1b738b910e2ab17ba147b56252b79d799b7a",
+   "9466e24564130d42e67dbe63583d6522f88c0361",
+   "9ed04c7bcac9802bf2cd5d72a073fba0f481a229"
+  ],
+  "cambios_java": {
+   "65c9aa260e4b592fef09115747b0245beae58a47": [],
+   "dccb214cb30798acd3d8d7a1906490e5f418b901": [
+    "weixin-java-open/src/main/java/me/chanjar/weixin/open/api/WxOpenMaService.java",
+    "weixin-java-open/src/main/java/me/chanjar/weixin/open/bean/message/WxOpenMaSubmitAuditMessage.java",
+    "weixin-java-open/src/main/java/me/chanjar/weixin/open/bean/result/WxOpenMaQueryQuotaResult.java"
+   ],
+   "6a76a798ee798df7caa65a2061f98a7038aa1f1e": [],
+   "5b41f4960615ea8405a7fa75a55942442ec8a84a": [],
+   "b70a4637b3fd33b8830e0c2f60a45af2785a179f": [
+    "weixin-java-open/src/main/java/me/chanjar/weixin/open/api/WxOpenMaService.java",
+    "weixin-java-open/src/main/java/me/chanjar/weixin/open/bean/result/WxOpenMaQueryQuotaResult.java"
+   ],
+   "f08b30e022226b9d1c8de6d102418ff8502a4f82": [],
+   "00040b63f46553c536c3b817ad8f8e43e8eba288": [],
+   "037a1b738b910e2ab17ba147b56252b79d799b7a": [],
+   "9466e24564130d42e67dbe63583d6522f88c0361": [
+    "weixin-java-open/src/main/java/me/chanjar/weixin/open/bean/message/WxOpenMaSubmitAuditMessage.java"
+   ],
+   "9ed04c7bcac9802bf2cd5d72a073fba0f481a229": []
+  },
+  "alcance": [
+   "weixin-java-open/src/main/java/me/chanjar/weixin/open/api/WxOpenMaService.java",
+   "weixin-java-open/src/main/java/me/chanjar/weixin/open/bean/message/WxOpenMaSubmitAuditMessage.java",
+   "weixin-java-open/src/main/java/me/chanjar/weixin/open/bean/result/WxOpenMaQueryQuotaResult.java"
+  ]
+ },
+ {
+  "orden": "3",
+  "pr_id": 4113039889,
+  "repo": "xcancloud/AngusInfra",
+  "numero": 114,
+  "agente": "Copilot",
+  "merged_at": "2026-03-22T01:05:56Z",
+  "commits": "8",
+  "commits_java_produccion": "3",
+  "base": "ba231dbb3cc19abc126a8bc6b9d9d7b3d08b2722",
+  "secuencia": [
+   "8a40661a95c65ac65d59f415d6416ad427970325",
+   "784d3f191743008893b40b60f045ab6be6b990ce",
+   "20c6df93b28d793ef1040a1ad2d1f2be26724df0",
+   "1e61980dd2c6ff09289429bc1af55218c8282ce7",
+   "e6a8de5483be6ccbb52f710bee1d3c6473a4b6a9",
+   "d142e6839e35bfe92bb43d4d18af2fcc87fa5fa7",
+   "d5a7268106f2cdf66aa9507312b0238989bc5cbb",
+   "b19649ac3bc8b9b72730ba28981552efba180da7"
+  ],
+  "cambios_java": {
+   "8a40661a95c65ac65d59f415d6416ad427970325": [],
+   "784d3f191743008893b40b60f045ab6be6b990ce": [
+    "security/auth-innerapi-starter/src/main/java/cloud/xcan/angus/security/cache/TokenCacheManager.java",
+    "security/auth-openapi2p-starter/src/main/java/cloud/xcan/angus/security/FeignOpenapi2pAuthInterceptor.java",
+    "security/auth-openapi2p-starter/src/main/java/cloud/xcan/angus/security/FeignOpenapi2pAutoConfigurer.java",
+    "security/auth-openapi2p-starter/src/main/java/cloud/xcan/angus/security/config/Openapi2pAuthProperties.java",
+    "security/auth-server-starter/src/main/java/cloud/xcan/angus/security/authentication/CustomOAuth2TokenIntrospectionAuthenticationProvider.java",
+    "security/auth-server-starter/src/main/java/cloud/xcan/angus/security/authentication/email/EmailCodeAuthenticationProvider.java",
+    "security/auth-server-starter/src/main/java/cloud/xcan/angus/security/authentication/password/OAuth2PasswordAuthenticationProvider.java",
+    "security/auth-server-starter/src/main/java/cloud/xcan/angus/security/authentication/sms/SmsCodeAuthenticationProvider.java"
+   ],
+   "20c6df93b28d793ef1040a1ad2d1f2be26724df0": [],
+   "1e61980dd2c6ff09289429bc1af55218c8282ce7": [],
+   "e6a8de5483be6ccbb52f710bee1d3c6473a4b6a9": [
+    "core-base/src/main/java/cloud/xcan/angus/core/app/AppWorkspaceInit.java",
+    "core-base/src/main/java/cloud/xcan/angus/core/biz/AbstractJoinAspect.java",
+    "core-base/src/main/java/cloud/xcan/angus/core/spring/SpringContextHolder.java",
+    "core-base/src/main/java/cloud/xcan/angus/core/utils/CoreUtils.java",
+    "core-base/src/main/java/cloud/xcan/angus/core/utils/ValidatorUtils.java"
+   ],
+   "d142e6839e35bfe92bb43d4d18af2fcc87fa5fa7": [
+    "security/auth-innerapi-starter/src/main/java/cloud/xcan/angus/security/FeignInnerApiAutoConfigurer.java",
+    "security/auth-innerapi-starter/src/main/java/cloud/xcan/angus/security/cache/TokenCacheManager.java",
+    "security/auth-innerapi-starter/src/main/java/cloud/xcan/angus/security/config/InnerApiAuthProperties.java",
+    "security/auth-openapi2p-starter/src/main/java/cloud/xcan/angus/security/FeignOpenapi2pAuthInterceptor.java",
+    "security/auth-openapi2p-starter/src/main/java/cloud/xcan/angus/security/FeignOpenapi2pAutoConfigurer.java",
+    "security/auth-openapi2p-starter/src/main/java/cloud/xcan/angus/security/config/Openapi2pAuthProperties.java",
+    "security/auth-resource-model/src/main/java/cloud/xcan/angus/security/model/cache/CacheType.java",
+    "security/auth-resource-model/src/main/java/cloud/xcan/angus/security/model/cache/DistributedTokenStore.java",
+    "security/auth-resource-model/src/main/java/cloud/xcan/angus/security/model/cache/LocalTokenStore.java",
+    "security/auth-resource-model/src/main/java/cloud/xcan/angus/security/model/cache/TokenStore.java"
+   ],
+   "d5a7268106f2cdf66aa9507312b0238989bc5cbb": [],
+   "b19649ac3bc8b9b72730ba28981552efba180da7": []
+  },
+  "alcance": [
+   "core-base/src/main/java/cloud/xcan/angus/core/app/AppWorkspaceInit.java",
+   "core-base/src/main/java/cloud/xcan/angus/core/biz/AbstractJoinAspect.java",
+   "core-base/src/main/java/cloud/xcan/angus/core/spring/SpringContextHolder.java",
+   "core-base/src/main/java/cloud/xcan/angus/core/utils/CoreUtils.java",
+   "core-base/src/main/java/cloud/xcan/angus/core/utils/ValidatorUtils.java",
+   "security/auth-innerapi-starter/src/main/java/cloud/xcan/angus/security/FeignInnerApiAutoConfigurer.java",
+   "security/auth-innerapi-starter/src/main/java/cloud/xcan/angus/security/cache/TokenCacheManager.java",
+   "security/auth-innerapi-starter/src/main/java/cloud/xcan/angus/security/config/InnerApiAuthProperties.java",
+   "security/auth-openapi2p-starter/src/main/java/cloud/xcan/angus/security/FeignOpenapi2pAuthInterceptor.java",
+   "security/auth-openapi2p-starter/src/main/java/cloud/xcan/angus/security/FeignOpenapi2pAutoConfigurer.java",
+   "security/auth-openapi2p-starter/src/main/java/cloud/xcan/angus/security/config/Openapi2pAuthProperties.java",
+   "security/auth-resource-model/src/main/java/cloud/xcan/angus/security/model/cache/CacheType.java",
+   "security/auth-resource-model/src/main/java/cloud/xcan/angus/security/model/cache/DistributedTokenStore.java",
+   "security/auth-resource-model/src/main/java/cloud/xcan/angus/security/model/cache/LocalTokenStore.java",
+   "security/auth-resource-model/src/main/java/cloud/xcan/angus/security/model/cache/TokenStore.java",
+   "security/auth-server-starter/src/main/java/cloud/xcan/angus/security/authentication/CustomOAuth2TokenIntrospectionAuthenticationProvider.java",
+   "security/auth-server-starter/src/main/java/cloud/xcan/angus/security/authentication/email/EmailCodeAuthenticationProvider.java",
+   "security/auth-server-starter/src/main/java/cloud/xcan/angus/security/authentication/password/OAuth2PasswordAuthenticationProvider.java",
+   "security/auth-server-starter/src/main/java/cloud/xcan/angus/security/authentication/sms/SmsCodeAuthenticationProvider.java"
+  ]
+ },
+ {
+  "orden": "4",
+  "pr_id": 3902872473,
+  "repo": "HangarMC/Hangar",
+  "numero": 1537,
+  "agente": "Copilot",
+  "merged_at": "2026-02-05T20:38:47Z",
+  "commits": "13",
+  "commits_java_produccion": "9",
+  "base": "f67763fbd711130a0936813ff72b603fb580dc30",
+  "secuencia": [
+   "c57b4dc6a1b0d38aff1bfa804c3409bae4be6fd4",
+   "11bab60500e6a800a5b8241330b4a12ce1462df4",
+   "b5cceaf7fbe4bb94ed0e2826c149ad0325979b64",
+   "f89a17a465116a7dfe29754053df4d0fb8c86392",
+   "8f7984449fd79b38577b0ebf05bff07864e4d39a",
+   "0d7de689603d63dcc2fb694d8550bed7f7654ed2",
+   "fd09958ed344a9cd8b3976f4df9b75811634fea4",
+   "9f7ac3621fd2b4685b98fbf0dc6b2c1cd8b17d9e",
+   "51c87be5868a3c79d11b0bf54e0c72688a15b2ae",
+   "c3d495af1b0a7fe5a74daf50bf4f7061a568385d",
+   "d4d97d4f63212a6036be5a36ec7d33a39f42154e",
+   "33ba25724192bff247dc89f777ac667a93338fe7",
+   "948802b456c6256dafe1dbdb91e8cc74ff90e476"
+  ],
+  "cambios_java": {
+   "c57b4dc6a1b0d38aff1bfa804c3409bae4be6fd4": [],
+   "11bab60500e6a800a5b8241330b4a12ce1462df4": [
+    "backend/src/main/java/io/papermc/hangar/security/authorization/AalAuthorizationManager.java",
+    "backend/src/main/java/io/papermc/hangar/security/authorization/CurrentUserAuthorizationManager.java",
+    "backend/src/main/java/io/papermc/hangar/security/authorization/HangarAuthorizationManager.java",
+    "backend/src/main/java/io/papermc/hangar/security/authorization/HangarUnanimousAuthorizationManager.java",
+    "backend/src/main/java/io/papermc/hangar/security/authorization/PermissionRequiredAuthorizationManager.java",
+    "backend/src/main/java/io/papermc/hangar/security/authorization/PrivilegedAuthorizationManager.java",
+    "backend/src/main/java/io/papermc/hangar/security/authorization/UnlockedAuthorizationManager.java",
+    "backend/src/main/java/io/papermc/hangar/security/authorization/VisibilityRequiredAuthorizationManager.java",
+    "backend/src/main/java/io/papermc/hangar/security/configs/MethodSecurityConfig.java"
+   ],
+   "b5cceaf7fbe4bb94ed0e2826c149ad0325979b64": [
+    "backend/src/main/java/io/papermc/hangar/security/authorization/AalAuthorizationManager.java",
+    "backend/src/main/java/io/papermc/hangar/security/authorization/PrivilegedAuthorizationManager.java",
+    "backend/src/main/java/io/papermc/hangar/security/authorization/UnlockedAuthorizationManager.java"
+   ],
+   "f89a17a465116a7dfe29754053df4d0fb8c86392": [
+    "backend/src/main/java/io/papermc/hangar/security/HangarMetadataSources.java",
+    "backend/src/main/java/io/papermc/hangar/security/HangarUnanimousBased.java",
+    "backend/src/main/java/io/papermc/hangar/security/annotations/HangarDecisionVoter.java",
+    "backend/src/main/java/io/papermc/hangar/security/annotations/aal/AalMetadataExtractor.java",
+    "backend/src/main/java/io/papermc/hangar/security/annotations/aal/AalUnlockedVoter.java",
+    "backend/src/main/java/io/papermc/hangar/security/annotations/currentuser/CurrentUserMetadataExtractor.java",
+    "backend/src/main/java/io/papermc/hangar/security/annotations/currentuser/CurrentUserVoter.java",
+    "backend/src/main/java/io/papermc/hangar/security/annotations/permission/PermissionRequiredMetadataExtractor.java",
+    "backend/src/main/java/io/papermc/hangar/security/annotations/permission/PermissionRequiredVoter.java",
+    "backend/src/main/java/io/papermc/hangar/security/annotations/privileged/PrivilegedMetadataExtractor.java",
+    "backend/src/main/java/io/papermc/hangar/security/annotations/privileged/PrivilegedVoter.java",
+    "backend/src/main/java/io/papermc/hangar/security/annotations/unlocked/UnlockedMetadataExtractor.java",
+    "backend/src/main/java/io/papermc/hangar/security/annotations/unlocked/UnlockedVoter.java",
+    "backend/src/main/java/io/papermc/hangar/security/annotations/visibility/VisibilityRequiredMetadataExtractor.java",
+    "backend/src/main/java/io/papermc/hangar/security/annotations/visibility/VisibilityRequiredVoter.java"
+   ],
+   "8f7984449fd79b38577b0ebf05bff07864e4d39a": [],
+   "0d7de689603d63dcc2fb694d8550bed7f7654ed2": [
+    "backend/src/main/java/io/papermc/hangar/security/annotations/aal/AalAuthorizationManager.java",
+    "backend/src/main/java/io/papermc/hangar/security/annotations/currentuser/CurrentUserAuthorizationManager.java",
+    "backend/src/main/java/io/papermc/hangar/security/annotations/permission/PermissionRequiredAuthorizationManager.java",
+    "backend/src/main/java/io/papermc/hangar/security/annotations/privileged/PrivilegedAuthorizationManager.java",
+    "backend/src/main/java/io/papermc/hangar/security/annotations/unlocked/UnlockedAuthorizationManager.java",
+    "backend/src/main/java/io/papermc/hangar/security/annotations/visibility/VisibilityRequiredAuthorizationManager.java",
+    "backend/src/main/java/io/papermc/hangar/security/authorization/AalAuthorizationManager.java",
+    "backend/src/main/java/io/papermc/hangar/security/authorization/CurrentUserAuthorizationManager.java",
+    "backend/src/main/java/io/papermc/hangar/security/authorization/PermissionRequiredAuthorizationManager.java",
+    "backend/src/main/java/io/papermc/hangar/security/authorization/PrivilegedAuthorizationManager.java",
+    "backend/src/main/java/io/papermc/hangar/security/authorization/UnlockedAuthorizationManager.java",
+    "backend/src/main/java/io/papermc/hangar/security/authorization/VisibilityRequiredAuthorizationManager.java",
+    "backend/src/main/java/io/papermc/hangar/security/configs/MethodSecurityConfig.java"
+   ],
+   "fd09958ed344a9cd8b3976f4df9b75811634fea4": [],
+   "9f7ac3621fd2b4685b98fbf0dc6b2c1cd8b17d9e": [
+    "backend/src/main/java/io/papermc/hangar/security/annotations/permission/PermissionRequiredAuthorizationManager.java",
+    "backend/src/main/java/io/papermc/hangar/security/configs/MethodSecurityConfig.java"
+   ],
+   "51c87be5868a3c79d11b0bf54e0c72688a15b2ae": [
+    "backend/src/main/java/io/papermc/hangar/security/annotations/aal/AalAuthorizationManager.java",
+    "backend/src/main/java/io/papermc/hangar/security/annotations/currentuser/CurrentUserAuthorizationManager.java",
+    "backend/src/main/java/io/papermc/hangar/security/annotations/permission/PermissionRequiredAuthorizationManager.java",
+    "backend/src/main/java/io/papermc/hangar/security/annotations/privileged/PrivilegedAuthorizationManager.java",
+    "backend/src/main/java/io/papermc/hangar/security/annotations/unlocked/UnlockedAuthorizationManager.java",
+    "backend/src/main/java/io/papermc/hangar/security/annotations/visibility/VisibilityRequiredAuthorizationManager.java",
+    "backend/src/main/java/io/papermc/hangar/security/authorization/HangarUnanimousAuthorizationManager.java"
+   ],
+   "c3d495af1b0a7fe5a74daf50bf4f7061a568385d": [
+    "backend/src/main/java/io/papermc/hangar/security/configs/MethodSecurityConfig.java"
+   ],
+   "d4d97d4f63212a6036be5a36ec7d33a39f42154e": [
+    "backend/src/main/java/io/papermc/hangar/security/annotations/aal/RequireAal.java",
+    "backend/src/main/java/io/papermc/hangar/security/annotations/privileged/Privileged.java",
+    "backend/src/main/java/io/papermc/hangar/security/annotations/unlocked/Unlocked.java",
+    "backend/src/main/java/io/papermc/hangar/security/configs/MethodSecurityConfig.java"
+   ],
+   "33ba25724192bff247dc89f777ac667a93338fe7": [
+    "backend/src/main/java/io/papermc/hangar/controller/api/v1/PagesController.java",
+    "backend/src/main/java/io/papermc/hangar/controller/api/v1/PermissionsController.java",
+    "backend/src/main/java/io/papermc/hangar/controller/api/v1/ProjectsController.java",
+    "backend/src/main/java/io/papermc/hangar/controller/api/v1/VersionsController.java",
+    "backend/src/main/java/io/papermc/hangar/controller/api/v1/interfaces/IPagesController.java",
+    "backend/src/main/java/io/papermc/hangar/controller/api/v1/interfaces/IPermissionsController.java",
+    "backend/src/main/java/io/papermc/hangar/controller/api/v1/interfaces/IProjectsController.java",
+    "backend/src/main/java/io/papermc/hangar/controller/api/v1/interfaces/IVersionsController.java"
+   ],
+   "948802b456c6256dafe1dbdb91e8cc74ff90e476": []
+  },
+  "alcance": [
+   "backend/src/main/java/io/papermc/hangar/controller/api/v1/PagesController.java",
+   "backend/src/main/java/io/papermc/hangar/controller/api/v1/PermissionsController.java",
+   "backend/src/main/java/io/papermc/hangar/controller/api/v1/ProjectsController.java",
+   "backend/src/main/java/io/papermc/hangar/controller/api/v1/VersionsController.java",
+   "backend/src/main/java/io/papermc/hangar/controller/api/v1/interfaces/IPagesController.java",
+   "backend/src/main/java/io/papermc/hangar/controller/api/v1/interfaces/IPermissionsController.java",
+   "backend/src/main/java/io/papermc/hangar/controller/api/v1/interfaces/IProjectsController.java",
+   "backend/src/main/java/io/papermc/hangar/controller/api/v1/interfaces/IVersionsController.java",
+   "backend/src/main/java/io/papermc/hangar/security/HangarMetadataSources.java",
+   "backend/src/main/java/io/papermc/hangar/security/HangarUnanimousBased.java",
+   "backend/src/main/java/io/papermc/hangar/security/annotations/HangarDecisionVoter.java",
+   "backend/src/main/java/io/papermc/hangar/security/annotations/aal/AalAuthorizationManager.java",
+   "backend/src/main/java/io/papermc/hangar/security/annotations/aal/AalMetadataExtractor.java",
+   "backend/src/main/java/io/papermc/hangar/security/annotations/aal/AalUnlockedVoter.java",
+   "backend/src/main/java/io/papermc/hangar/security/annotations/aal/RequireAal.java",
+   "backend/src/main/java/io/papermc/hangar/security/annotations/currentuser/CurrentUserAuthorizationManager.java",
+   "backend/src/main/java/io/papermc/hangar/security/annotations/currentuser/CurrentUserMetadataExtractor.java",
+   "backend/src/main/java/io/papermc/hangar/security/annotations/currentuser/CurrentUserVoter.java",
+   "backend/src/main/java/io/papermc/hangar/security/annotations/permission/PermissionRequiredAuthorizationManager.java",
+   "backend/src/main/java/io/papermc/hangar/security/annotations/permission/PermissionRequiredMetadataExtractor.java",
+   "backend/src/main/java/io/papermc/hangar/security/annotations/permission/PermissionRequiredVoter.java",
+   "backend/src/main/java/io/papermc/hangar/security/annotations/privileged/Privileged.java",
+   "backend/src/main/java/io/papermc/hangar/security/annotations/privileged/PrivilegedAuthorizationManager.java",
+   "backend/src/main/java/io/papermc/hangar/security/annotations/privileged/PrivilegedMetadataExtractor.java",
+   "backend/src/main/java/io/papermc/hangar/security/annotations/privileged/PrivilegedVoter.java",
+   "backend/src/main/java/io/papermc/hangar/security/annotations/unlocked/Unlocked.java",
+   "backend/src/main/java/io/papermc/hangar/security/annotations/unlocked/UnlockedAuthorizationManager.java",
+   "backend/src/main/java/io/papermc/hangar/security/annotations/unlocked/UnlockedMetadataExtractor.java",
+   "backend/src/main/java/io/papermc/hangar/security/annotations/unlocked/UnlockedVoter.java",
+   "backend/src/main/java/io/papermc/hangar/security/annotations/visibility/VisibilityRequiredAuthorizationManager.java",
+   "backend/src/main/java/io/papermc/hangar/security/annotations/visibility/VisibilityRequiredMetadataExtractor.java",
+   "backend/src/main/java/io/papermc/hangar/security/annotations/visibility/VisibilityRequiredVoter.java",
+   "backend/src/main/java/io/papermc/hangar/security/authorization/AalAuthorizationManager.java",
+   "backend/src/main/java/io/papermc/hangar/security/authorization/CurrentUserAuthorizationManager.java",
+   "backend/src/main/java/io/papermc/hangar/security/authorization/HangarAuthorizationManager.java",
+   "backend/src/main/java/io/papermc/hangar/security/authorization/HangarUnanimousAuthorizationManager.java",
+   "backend/src/main/java/io/papermc/hangar/security/authorization/PermissionRequiredAuthorizationManager.java",
+   "backend/src/main/java/io/papermc/hangar/security/authorization/PrivilegedAuthorizationManager.java",
+   "backend/src/main/java/io/papermc/hangar/security/authorization/UnlockedAuthorizationManager.java",
+   "backend/src/main/java/io/papermc/hangar/security/authorization/VisibilityRequiredAuthorizationManager.java",
+   "backend/src/main/java/io/papermc/hangar/security/configs/MethodSecurityConfig.java"
+  ]
+ },
+ {
+  "orden": "5",
+  "pr_id": 3783599847,
+  "repo": "codenameone/CodenameOne",
+  "numero": 4383,
+  "agente": "OpenAI_Codex",
+  "merged_at": "2026-01-06T16:16:18Z",
+  "commits": "6",
+  "commits_java_produccion": "6",
+  "base": "085dde32ecd9bb23eaaf4bba817c7f7fad97ba70",
+  "secuencia": [
+   "4776110811ececaf8bdad137269c0cf017703744",
+   "87ffe2acf7760fbf716a196255c1378e83710b23",
+   "6ff7987c66a758b9cba93c48e4ea944fb78d476e",
+   "4b617760ce6d663486881c6e9b43b880e70561f0",
+   "36c6feefd588808b70664b4819db222022aa9cc1",
+   "1fb10305b92709396f92365b0d99fb32ea2db732"
+  ],
+  "cambios_java": {
+   "4776110811ececaf8bdad137269c0cf017703744": [
+    "CodenameOne/src/com/codename1/charts/compat/PathMeasure.java",
+    "CodenameOne/src/com/codename1/charts/views/BarChart.java",
+    "CodenameOne/src/com/codename1/components/InfiniteScrollAdapter.java",
+    "CodenameOne/src/com/codename1/components/SplitPane.java",
+    "CodenameOne/src/com/codename1/components/ToastBar.java",
+    "CodenameOne/src/com/codename1/io/gzip/Deflate.java",
+    "CodenameOne/src/com/codename1/io/gzip/GZIPHeader.java",
+    "CodenameOne/src/com/codename1/io/gzip/Inflate.java",
+    "CodenameOne/src/com/codename1/io/gzip/Inflater.java",
+    "CodenameOne/src/com/codename1/javascript/JavascriptContext.java",
+    "CodenameOne/src/com/codename1/maps/MapComponent.java",
+    "CodenameOne/src/com/codename1/ui/Container.java",
+    "CodenameOne/src/com/codename1/ui/Display.java",
+    "CodenameOne/src/com/codename1/ui/TextSelection.java",
+    "CodenameOne/src/com/codename1/ui/URLImage.java",
+    "CodenameOne/src/com/codename1/ui/animations/CommonTransitions.java",
+    "CodenameOne/src/com/codename1/ui/animations/MorphTransition.java",
+    "CodenameOne/src/com/codename1/ui/html/HTMLComponent.java",
+    "CodenameOne/src/com/codename1/ui/layouts/mig/CodenameOneMiGComponentWrapper.java",
+    "CodenameOne/src/com/codename1/ui/layouts/mig/PlatformDefaults.java",
+    "CodenameOne/src/com/codename1/ui/plaf/Style.java"
+   ],
+   "87ffe2acf7760fbf716a196255c1378e83710b23": [
+    "CodenameOne/src/com/codename1/charts/compat/PathMeasure.java",
+    "CodenameOne/src/com/codename1/ui/plaf/Style.java"
+   ],
+   "6ff7987c66a758b9cba93c48e4ea944fb78d476e": [
+    "CodenameOne/src/com/codename1/io/gzip/Inflate.java"
+   ],
+   "4b617760ce6d663486881c6e9b43b880e70561f0": [
+    "CodenameOne/src/com/codename1/io/gzip/Inflate.java"
+   ],
+   "36c6feefd588808b70664b4819db222022aa9cc1": [
+    "CodenameOne/src/com/codename1/components/SplitPane.java",
+    "CodenameOne/src/com/codename1/ui/layouts/GridBagLayout.java"
+   ],
+   "1fb10305b92709396f92365b0d99fb32ea2db732": [
+    "CodenameOne/src/com/codename1/ui/layouts/GridBagLayout.java"
+   ]
+  },
+  "alcance": [
+   "CodenameOne/src/com/codename1/charts/compat/PathMeasure.java",
+   "CodenameOne/src/com/codename1/charts/views/BarChart.java",
+   "CodenameOne/src/com/codename1/components/InfiniteScrollAdapter.java",
+   "CodenameOne/src/com/codename1/components/SplitPane.java",
+   "CodenameOne/src/com/codename1/components/ToastBar.java",
+   "CodenameOne/src/com/codename1/io/gzip/Deflate.java",
+   "CodenameOne/src/com/codename1/io/gzip/GZIPHeader.java",
+   "CodenameOne/src/com/codename1/io/gzip/Inflate.java",
+   "CodenameOne/src/com/codename1/io/gzip/Inflater.java",
+   "CodenameOne/src/com/codename1/javascript/JavascriptContext.java",
+   "CodenameOne/src/com/codename1/maps/MapComponent.java",
+   "CodenameOne/src/com/codename1/ui/Container.java",
+   "CodenameOne/src/com/codename1/ui/Display.java",
+   "CodenameOne/src/com/codename1/ui/TextSelection.java",
+   "CodenameOne/src/com/codename1/ui/URLImage.java",
+   "CodenameOne/src/com/codename1/ui/animations/CommonTransitions.java",
+   "CodenameOne/src/com/codename1/ui/animations/MorphTransition.java",
+   "CodenameOne/src/com/codename1/ui/html/HTMLComponent.java",
+   "CodenameOne/src/com/codename1/ui/layouts/GridBagLayout.java",
+   "CodenameOne/src/com/codename1/ui/layouts/mig/CodenameOneMiGComponentWrapper.java",
+   "CodenameOne/src/com/codename1/ui/layouts/mig/PlatformDefaults.java",
+   "CodenameOne/src/com/codename1/ui/plaf/Style.java"
+  ]
+ },
+ {
+  "orden": "6",
+  "pr_id": 3523327685,
+  "repo": "tbsalling/aismessages",
+  "numero": 73,
+  "agente": "Copilot",
+  "merged_at": "2025-10-16T21:12:04Z",
+  "commits": "6",
+  "commits_java_produccion": "5",
+  "base": "63cf0dd54e5fa5ecffb5daa23fc9bc1ff7da7fc1",
+  "secuencia": [
+   "a8cd9302b642067ab6fe01375082be6c8603a163",
+   "cc52faaf34a84a3891b6120422efdb930fb4c10c",
+   "117b219bf1374cdcb69accb2e2ac876df044a4e4",
+   "a82837f830a8d70e19095681cdcdd86713fc4def",
+   "d262b2dbdfcc07964b7555dfa21918f49510abb0",
+   "a99a80314ca91faa3b58a8ca332d35b150125681"
+  ],
+  "cambios_java": {
+   "a8cd9302b642067ab6fe01375082be6c8603a163": [],
+   "cc52faaf34a84a3891b6120422efdb930fb4c10c": [
+    "src/main/java/dk/tbsalling/aismessages/nmea/messages/NMEAMessage.java"
+   ],
+   "117b219bf1374cdcb69accb2e2ac876df044a4e4": [
+    "src/main/java/dk/tbsalling/aismessages/nmea/messages/NMEAMessage.java"
+   ],
+   "a82837f830a8d70e19095681cdcdd86713fc4def": [
+    "src/main/java/dk/tbsalling/aismessages/nmea/NMEAMessageHandler.java"
+   ],
+   "d262b2dbdfcc07964b7555dfa21918f49510abb0": [
+    "src/main/java/dk/tbsalling/aismessages/nmea/NMEAMessageHandler.java",
+    "src/main/java/dk/tbsalling/aismessages/nmea/StrictNMEAMessageHandler.java"
+   ],
+   "a99a80314ca91faa3b58a8ca332d35b150125681": [
+    "src/main/java/dk/tbsalling/aismessages/nmea/NMEAMessageHandlerStrict.java",
+    "src/main/java/dk/tbsalling/aismessages/nmea/StrictNMEAMessageHandler.java"
+   ]
+  },
+  "alcance": [
+   "src/main/java/dk/tbsalling/aismessages/nmea/NMEAMessageHandler.java",
+   "src/main/java/dk/tbsalling/aismessages/nmea/NMEAMessageHandlerStrict.java",
+   "src/main/java/dk/tbsalling/aismessages/nmea/StrictNMEAMessageHandler.java",
+   "src/main/java/dk/tbsalling/aismessages/nmea/messages/NMEAMessage.java"
+  ]
+ },
+ {
+  "orden": "7",
+  "pr_id": 3526768331,
+  "repo": "codenameone/CodenameOne",
+  "numero": 3978,
+  "agente": "OpenAI_Codex",
+  "merged_at": "2025-10-17T17:27:00Z",
+  "commits": "2",
+  "commits_java_produccion": "2",
+  "base": "986f516790a27fdc1e1d39b7a1d273e08e83689b",
+  "secuencia": [
+   "d90308a508202461651e47a5dbbcdaa1e91a5c39",
+   "dd3805b73b3962c757e5721767387b45050f0d1c"
+  ],
+  "cambios_java": {
+   "d90308a508202461651e47a5dbbcdaa1e91a5c39": [
+    "CodenameOne/src/com/codename1/components/ScaleImageLabel.java",
+    "CodenameOne/src/com/codename1/components/SliderBridge.java",
+    "CodenameOne/src/com/codename1/components/SplitPane.java",
+    "CodenameOne/src/com/codename1/components/Switch.java",
+    "CodenameOne/src/com/codename1/components/ToastBar.java",
+    "CodenameOne/src/com/codename1/components/WebBrowser.java",
+    "CodenameOne/src/com/codename1/db/Cursor.java",
+    "CodenameOne/src/com/codename1/db/Database.java",
+    "CodenameOne/src/com/codename1/db/Row.java",
+    "CodenameOne/src/com/codename1/db/RowExt.java",
+    "CodenameOne/src/com/codename1/db/ThreadSafeDatabase.java",
+    "CodenameOne/src/com/codename1/facebook/FaceBookAccess.java",
+    "CodenameOne/src/com/codename1/facebook/FacebookRESTService.java",
+    "CodenameOne/src/com/codename1/facebook/Post.java",
+    "CodenameOne/src/com/codename1/impl/CodenameOneImplementation.java",
+    "CodenameOne/src/com/codename1/impl/FullScreenAdService.java",
+    "CodenameOne/src/com/codename1/ui/geom/GeneralPath.java"
+   ],
+   "dd3805b73b3962c757e5721767387b45050f0d1c": [
+    "CodenameOne/src/com/codename1/facebook/FaceBookAccess.java",
+    "CodenameOne/src/com/codename1/ui/geom/GeneralPath.java"
+   ]
+  },
+  "alcance": [
+   "CodenameOne/src/com/codename1/components/ScaleImageLabel.java",
+   "CodenameOne/src/com/codename1/components/SliderBridge.java",
+   "CodenameOne/src/com/codename1/components/SplitPane.java",
+   "CodenameOne/src/com/codename1/components/Switch.java",
+   "CodenameOne/src/com/codename1/components/ToastBar.java",
+   "CodenameOne/src/com/codename1/components/WebBrowser.java",
+   "CodenameOne/src/com/codename1/db/Cursor.java",
+   "CodenameOne/src/com/codename1/db/Database.java",
+   "CodenameOne/src/com/codename1/db/Row.java",
+   "CodenameOne/src/com/codename1/db/RowExt.java",
+   "CodenameOne/src/com/codename1/db/ThreadSafeDatabase.java",
+   "CodenameOne/src/com/codename1/facebook/FaceBookAccess.java",
+   "CodenameOne/src/com/codename1/facebook/FacebookRESTService.java",
+   "CodenameOne/src/com/codename1/facebook/Post.java",
+   "CodenameOne/src/com/codename1/impl/CodenameOneImplementation.java",
+   "CodenameOne/src/com/codename1/impl/FullScreenAdService.java",
+   "CodenameOne/src/com/codename1/ui/geom/GeneralPath.java"
+  ]
+ },
+ {
+  "orden": "8",
+  "pr_id": 3767602710,
+  "repo": "farfromrefug/EnforceDoze",
+  "numero": 57,
+  "agente": "Copilot",
+  "merged_at": "2025-12-29T15:04:38Z",
+  "commits": "4",
+  "commits_java_produccion": "3",
+  "base": "68fb0a2edcdcd42d8e90a651ad21837c59bc8970",
+  "secuencia": [
+   "6d69d14d8da0e7ea569ca2e39d8c971399075b96",
+   "aa287907a20aeacbf50c444d059799d88e4e0d40",
+   "bbd054b32b5ccdb331a6a50fcc1391266d8686b9",
+   "ddc575c9b4c12067b2d96c0eb28abff106231836"
+  ],
+  "cambios_java": {
+   "6d69d14d8da0e7ea569ca2e39d8c971399075b96": [],
+   "aa287907a20aeacbf50c444d059799d88e4e0d40": [
+    "app/src/main/java/com/akylas/enforcedoze/ForceDozeService.java"
+   ],
+   "bbd054b32b5ccdb331a6a50fcc1391266d8686b9": [
+    "app/src/main/java/com/akylas/enforcedoze/ForceDozeService.java"
+   ],
+   "ddc575c9b4c12067b2d96c0eb28abff106231836": [
+    "app/src/main/java/com/akylas/enforcedoze/ForceDozeService.java"
+   ]
+  },
+  "alcance": [
+   "app/src/main/java/com/akylas/enforcedoze/ForceDozeService.java"
+  ]
+ },
+ {
+  "orden": "9",
+  "pr_id": 3994588891,
+  "repo": "StarRocks/starrocks",
+  "numero": 69523,
+  "agente": "Copilot",
+  "merged_at": "2026-02-27T02:09:34Z",
+  "commits": "4",
+  "commits_java_produccion": "2",
+  "base": "b2de51dd948e093f48c9229f28e18514ec841534",
+  "secuencia": [
+   "77d24c68d64f6f6436a47e46e52713643c19ff13",
+   "007b5a01bedb73e5f4ca7126df07b7ba9a6dc097",
+   "4db170fa6ec02b0f3e2b0747b9a1a07fe6f9678e",
+   "00fc46d2ea3f04396dc43052445b9cb62140c071"
+  ],
+  "cambios_java": {
+   "77d24c68d64f6f6436a47e46e52713643c19ff13": [],
+   "007b5a01bedb73e5f4ca7126df07b7ba9a6dc097": [
+    "fe/fe-core/src/main/java/com/starrocks/qe/DefaultCoordinator.java"
+   ],
+   "4db170fa6ec02b0f3e2b0747b9a1a07fe6f9678e": [
+    "fe/fe-core/src/main/java/com/starrocks/qe/DefaultCoordinator.java"
+   ],
+   "00fc46d2ea3f04396dc43052445b9cb62140c071": []
+  },
+  "alcance": [
+   "fe/fe-core/src/main/java/com/starrocks/qe/DefaultCoordinator.java"
+  ]
+ },
+ {
+  "orden": "11",
+  "pr_id": 3264573288,
+  "repo": "Open-J-Proxy/ojp",
+  "numero": 15,
+  "agente": "Copilot",
+  "merged_at": "2025-07-30T16:21:37Z",
+  "commits": "13",
+  "commits_java_produccion": "4",
+  "base": "2b087925b09accf0cbb9d5439e5de01f79ebd6db",
+  "secuencia": [
+   "e1dac3a944597e603ab0a84d47bdfc1f2361e453",
+   "6357807361b7c645fa98fda7606822055b64a240",
+   "1c279b84407629daa742d5e0f76a8c50436a9c3a",
+   "c7dc16953a59c7235731f6e1acf911b3c1a986bf",
+   "b5d68eebe2d6cf98eb6d8853625e67d3aa843f43",
+   "d6adadd6d1287503cc4581b4253c0c3a91a842aa",
+   "ddbc3247d8e47a531143b1735bd057c76e314673",
+   "65cee4be10dd9b59985fa7f18b47f26ac206a125",
+   "482a4ff93c9386b77422df66b24c6b2f87998acc",
+   "683ab6ea6deddec29b803ac4f3155383ca46fc80",
+   "0848b092a31fae84ce8f7c3b49fa1638ddff0aba",
+   "c630314cdbe256b35eee9f8e3de9681cacec7b57",
+   "8e3b01d1c57ee7c7ffc724fd723b74a04ee12443"
+  ],
+  "cambios_java": {
+   "e1dac3a944597e603ab0a84d47bdfc1f2361e453": [],
+   "6357807361b7c645fa98fda7606822055b64a240": [],
+   "1c279b84407629daa742d5e0f76a8c50436a9c3a": [],
+   "c7dc16953a59c7235731f6e1acf911b3c1a986bf": [],
+   "b5d68eebe2d6cf98eb6d8853625e67d3aa843f43": [],
+   "d6adadd6d1287503cc4581b4253c0c3a91a842aa": [],
+   "ddbc3247d8e47a531143b1735bd057c76e314673": [],
+   "65cee4be10dd9b59985fa7f18b47f26ac206a125": [],
+   "482a4ff93c9386b77422df66b24c6b2f87998acc": [
+    "ojp-jdbc-driver/src/main/java/org/openjdbcproxy/jdbc/ResultSet.java",
+    "ojp-server/src/main/java/org/openjdbcproxy/grpc/server/StatementServiceImpl.java",
+    "ojp-server/src/main/java/org/openjdbcproxy/grpc/server/utils/DateTimeUtils.java"
+   ],
+   "683ab6ea6deddec29b803ac4f3155383ca46fc80": [
+    "ojp-jdbc-driver/src/main/java/org/openjdbcproxy/jdbc/Connection.java",
+    "ojp-jdbc-driver/src/main/java/org/openjdbcproxy/jdbc/DbType.java",
+    "ojp-jdbc-driver/src/main/java/org/openjdbcproxy/jdbc/Driver.java",
+    "ojp-jdbc-driver/src/main/java/org/openjdbcproxy/jdbc/Lob.java",
+    "ojp-jdbc-driver/src/main/java/org/openjdbcproxy/jdbc/LobServiceImpl.java",
+    "ojp-jdbc-driver/src/main/java/org/openjdbcproxy/jdbc/PreparedStatement.java",
+    "ojp-jdbc-driver/src/main/java/org/openjdbcproxy/jdbc/ResultSet.java",
+    "ojp-server/src/main/java/org/openjdbcproxy/grpc/server/StatementServiceImpl.java",
+    "ojp-server/src/main/java/org/openjdbcproxy/grpc/server/utils/DbUrlUtils.java"
+   ],
+   "0848b092a31fae84ce8f7c3b49fa1638ddff0aba": [],
+   "c630314cdbe256b35eee9f8e3de9681cacec7b57": [
+    "ojp-jdbc-driver/src/main/java/org/openjdbcproxy/jdbc/Lob.java",
+    "ojp-jdbc-driver/src/main/java/org/openjdbcproxy/jdbc/LobServiceImpl.java",
+    "ojp-jdbc-driver/src/main/java/org/openjdbcproxy/jdbc/PreparedStatement.java",
+    "ojp-jdbc-driver/src/main/java/org/openjdbcproxy/jdbc/ResultSet.java",
+    "ojp-jdbc-driver/src/main/java/org/openjdbcproxy/jdbc/sqlserver/SqlServerSerialBlob.java",
+    "ojp-server/src/main/java/org/openjdbcproxy/grpc/server/StatementServiceImpl.java"
+   ],
+   "8e3b01d1c57ee7c7ffc724fd723b74a04ee12443": [
+    "ojp-grpc-commons/src/main/java/org/openjdbcproxy/database/DatabaseUtils.java",
+    "ojp-jdbc-driver/src/main/java/org/openjdbcproxy/jdbc/Driver.java",
+    "ojp-jdbc-driver/src/main/java/org/openjdbcproxy/jdbc/LobServiceImpl.java",
+    "ojp-jdbc-driver/src/main/java/org/openjdbcproxy/jdbc/sqlserver/SqlServerSerialBlob.java",
+    "ojp-server/src/main/java/org/openjdbcproxy/grpc/server/ConnectionSessionDTO.java",
+    "ojp-server/src/main/java/org/openjdbcproxy/grpc/server/Constants.java",
+    "ojp-server/src/main/java/org/openjdbcproxy/grpc/server/StatementServiceImpl.java",
+    "ojp-server/src/main/java/org/openjdbcproxy/grpc/server/utils/DbUrlUtils.java",
+    "ojp-server/src/main/java/org/openjdbcproxy/grpc/server/utils/DriverUtils.java"
+   ]
+  },
+  "alcance": [
+   "ojp-grpc-commons/src/main/java/org/openjdbcproxy/database/DatabaseUtils.java",
+   "ojp-jdbc-driver/src/main/java/org/openjdbcproxy/jdbc/Connection.java",
+   "ojp-jdbc-driver/src/main/java/org/openjdbcproxy/jdbc/DbType.java",
+   "ojp-jdbc-driver/src/main/java/org/openjdbcproxy/jdbc/Driver.java",
+   "ojp-jdbc-driver/src/main/java/org/openjdbcproxy/jdbc/Lob.java",
+   "ojp-jdbc-driver/src/main/java/org/openjdbcproxy/jdbc/LobServiceImpl.java",
+   "ojp-jdbc-driver/src/main/java/org/openjdbcproxy/jdbc/PreparedStatement.java",
+   "ojp-jdbc-driver/src/main/java/org/openjdbcproxy/jdbc/ResultSet.java",
+   "ojp-jdbc-driver/src/main/java/org/openjdbcproxy/jdbc/sqlserver/SqlServerSerialBlob.java",
+   "ojp-server/src/main/java/org/openjdbcproxy/grpc/server/ConnectionSessionDTO.java",
+   "ojp-server/src/main/java/org/openjdbcproxy/grpc/server/Constants.java",
+   "ojp-server/src/main/java/org/openjdbcproxy/grpc/server/StatementServiceImpl.java",
+   "ojp-server/src/main/java/org/openjdbcproxy/grpc/server/utils/DateTimeUtils.java",
+   "ojp-server/src/main/java/org/openjdbcproxy/grpc/server/utils/DbUrlUtils.java",
+   "ojp-server/src/main/java/org/openjdbcproxy/grpc/server/utils/DriverUtils.java"
+  ]
+ },
+ {
+  "orden": "12",
+  "pr_id": 3562231060,
+  "repo": "kenjdavidson/react-native-bluetooth-classic",
+  "numero": 361,
+  "agente": "Copilot",
+  "merged_at": "2025-11-04T14:27:13Z",
+  "commits": "3",
+  "commits_java_produccion": "2",
+  "base": "15bf12f01204c3c72a005b62d4d9d35fc666e120",
+  "secuencia": [
+   "3ab585f61e8e0614cdcda528c09443f963e45682",
+   "e67abb090edecee3a0679c14ffca0c05f8e6ea3e",
+   "bfe2e3e3e609e4db53eaa8eb342f353bfc60f482"
+  ],
+  "cambios_java": {
+   "3ab585f61e8e0614cdcda528c09443f963e45682": [],
+   "e67abb090edecee3a0679c14ffca0c05f8e6ea3e": [
+    "android/src/main/java/kjd/reactnative/bluetooth/RNBluetoothClassicModule.java"
+   ],
+   "bfe2e3e3e609e4db53eaa8eb342f353bfc60f482": [
+    "android/src/main/java/kjd/reactnative/bluetooth/RNBluetoothClassicModule.java"
+   ]
+  },
+  "alcance": [
+   "android/src/main/java/kjd/reactnative/bluetooth/RNBluetoothClassicModule.java"
+  ]
+ },
+ {
+  "orden": "13",
+  "pr_id": 3769974631,
+  "repo": "ClementGre/PDF4Teachers",
+  "numero": 223,
+  "agente": "Copilot",
+  "merged_at": "2025-12-30T17:09:13Z",
+  "commits": "7",
+  "commits_java_produccion": "6",
+  "base": "63eefe832d67a1530a4c952e0a0fd99ae83c0f89",
+  "secuencia": [
+   "aa23d8b81305a029120f519b292d2e00ae8dd359",
+   "3b96bf5062b16df9c70ad580a920ea618985338a",
+   "b2c246561bdbdfeb6bd64a2d98bcddac269f0b0e",
+   "83c1e55994a588a442d6624e99d914a71a6a612a",
+   "2895139993599ce61143173252de8f24c0ba99d5",
+   "f152fdca07a79aeda97a20849a224cf83bc1a047",
+   "e0b96f85f792eef1ea3d3bee1fbb84d7b21c48ed"
+  ],
+  "cambios_java": {
+   "aa23d8b81305a029120f519b292d2e00ae8dd359": [],
+   "3b96bf5062b16df9c70ad580a920ea618985338a": [
+    "src/main/java/fr/clementgre/pdf4teachers/document/render/display/hyperlinks/Hyperlink.java",
+    "src/main/java/fr/clementgre/pdf4teachers/document/render/display/hyperlinks/HyperlinkOverlayManager.java",
+    "src/main/java/fr/clementgre/pdf4teachers/interfaces/windows/MainWindow.java",
+    "src/main/java/fr/clementgre/pdf4teachers/panel/MainScreen/MainScreen.java",
+    "src/main/java/fr/clementgre/pdf4teachers/panel/sidebar/SideTab.java",
+    "src/main/java/fr/clementgre/pdf4teachers/panel/sidebar/toc/TocEntry.java",
+    "src/main/java/fr/clementgre/pdf4teachers/panel/sidebar/toc/TocTab.java"
+   ],
+   "b2c246561bdbdfeb6bd64a2d98bcddac269f0b0e": [
+    "src/main/java/fr/clementgre/pdf4teachers/document/Document.java",
+    "src/main/java/fr/clementgre/pdf4teachers/document/render/display/PageRenderer.java",
+    "src/main/java/fr/clementgre/pdf4teachers/interfaces/windows/MainWindow.java"
+   ],
+   "83c1e55994a588a442d6624e99d914a71a6a612a": [
+    "src/main/java/fr/clementgre/pdf4teachers/document/render/display/hyperlinks/HyperlinkOverlayManager.java"
+   ],
+   "2895139993599ce61143173252de8f24c0ba99d5": [
+    "src/main/java/fr/clementgre/pdf4teachers/document/render/display/hyperlinks/Hyperlink.java",
+    "src/main/java/fr/clementgre/pdf4teachers/document/render/display/hyperlinks/HyperlinkOverlayManager.java",
+    "src/main/java/fr/clementgre/pdf4teachers/panel/sidebar/toc/TocTab.java"
+   ],
+   "f152fdca07a79aeda97a20849a224cf83bc1a047": [
+    "src/main/java/fr/clementgre/pdf4teachers/document/render/display/PageRenderer.java",
+    "src/main/java/fr/clementgre/pdf4teachers/document/render/display/hyperlinks/HyperlinkOverlayManager.java",
+    "src/main/java/fr/clementgre/pdf4teachers/panel/MainScreen/ZoomOperator.java",
+    "src/main/java/fr/clementgre/pdf4teachers/panel/sidebar/SideBar.java",
+    "src/main/java/fr/clementgre/pdf4teachers/panel/sidebar/files/FileTab.java",
+    "src/main/java/fr/clementgre/pdf4teachers/panel/sidebar/grades/GradeTab.java",
+    "src/main/java/fr/clementgre/pdf4teachers/panel/sidebar/paint/PaintTab.java",
+    "src/main/java/fr/clementgre/pdf4teachers/panel/sidebar/skills/SkillsTab.java",
+    "src/main/java/fr/clementgre/pdf4teachers/panel/sidebar/texts/TextTab.java",
+    "src/main/java/fr/clementgre/pdf4teachers/panel/sidebar/toc/TocEntry.java",
+    "src/main/java/fr/clementgre/pdf4teachers/panel/sidebar/toc/TocTab.java"
+   ],
+   "e0b96f85f792eef1ea3d3bee1fbb84d7b21c48ed": [
+    "src/main/java/fr/clementgre/pdf4teachers/document/render/display/PDFPagesEditor.java",
+    "src/main/java/fr/clementgre/pdf4teachers/document/render/display/hyperlinks/Hyperlink.java",
+    "src/main/java/fr/clementgre/pdf4teachers/document/render/display/hyperlinks/HyperlinkOverlayManager.java",
+    "src/main/java/fr/clementgre/pdf4teachers/interfaces/KeyboardShortcuts.java",
+    "src/main/java/fr/clementgre/pdf4teachers/interfaces/windows/MainWindow.java",
+    "src/main/java/fr/clementgre/pdf4teachers/interfaces/windows/log/Log.java",
+    "src/main/java/fr/clementgre/pdf4teachers/panel/MainScreen/MainScreen.java",
+    "src/main/java/fr/clementgre/pdf4teachers/panel/sidebar/toc/TocTab.java"
+   ]
+  },
+  "alcance": [
+   "src/main/java/fr/clementgre/pdf4teachers/document/Document.java",
+   "src/main/java/fr/clementgre/pdf4teachers/document/render/display/PDFPagesEditor.java",
+   "src/main/java/fr/clementgre/pdf4teachers/document/render/display/PageRenderer.java",
+   "src/main/java/fr/clementgre/pdf4teachers/document/render/display/hyperlinks/Hyperlink.java",
+   "src/main/java/fr/clementgre/pdf4teachers/document/render/display/hyperlinks/HyperlinkOverlayManager.java",
+   "src/main/java/fr/clementgre/pdf4teachers/interfaces/KeyboardShortcuts.java",
+   "src/main/java/fr/clementgre/pdf4teachers/interfaces/windows/MainWindow.java",
+   "src/main/java/fr/clementgre/pdf4teachers/interfaces/windows/log/Log.java",
+   "src/main/java/fr/clementgre/pdf4teachers/panel/MainScreen/MainScreen.java",
+   "src/main/java/fr/clementgre/pdf4teachers/panel/MainScreen/ZoomOperator.java",
+   "src/main/java/fr/clementgre/pdf4teachers/panel/sidebar/SideBar.java",
+   "src/main/java/fr/clementgre/pdf4teachers/panel/sidebar/SideTab.java",
+   "src/main/java/fr/clementgre/pdf4teachers/panel/sidebar/files/FileTab.java",
+   "src/main/java/fr/clementgre/pdf4teachers/panel/sidebar/grades/GradeTab.java",
+   "src/main/java/fr/clementgre/pdf4teachers/panel/sidebar/paint/PaintTab.java",
+   "src/main/java/fr/clementgre/pdf4teachers/panel/sidebar/skills/SkillsTab.java",
+   "src/main/java/fr/clementgre/pdf4teachers/panel/sidebar/texts/TextTab.java",
+   "src/main/java/fr/clementgre/pdf4teachers/panel/sidebar/toc/TocEntry.java",
+   "src/main/java/fr/clementgre/pdf4teachers/panel/sidebar/toc/TocTab.java"
+  ]
+ },
+ {
+  "orden": "14",
+  "pr_id": 3837458181,
+  "repo": "MewX/light-novel-library_Wenku8_Android",
+  "numero": 158,
+  "agente": "Google_Jules",
+  "merged_at": "2026-01-21T10:13:28Z",
+  "commits": "3",
+  "commits_java_produccion": "3",
+  "base": "503f832c5a10bc4b5e39e8d124a78edb4eb63b9d",
+  "secuencia": [
+   "51be3ea2dff07eb25870510b8baff9f462b661c8",
+   "1bd88e54f925edb3c81fd78e3517798aefc52cdb",
+   "b3fdb8697fd284c1355c470f65d3613006b32bfb"
+  ],
+  "cambios_java": {
+   "51be3ea2dff07eb25870510b8baff9f462b661c8": [
+    "studio-android/LightNovelLibrary/app/src/main/java/org/mewx/wenku8/activity/VerticalReaderActivity.java"
+   ],
+   "1bd88e54f925edb3c81fd78e3517798aefc52cdb": [
+    "studio-android/LightNovelLibrary/app/src/main/java/org/mewx/wenku8/activity/VerticalReaderActivity.java"
+   ],
+   "b3fdb8697fd284c1355c470f65d3613006b32bfb": [
+    "studio-android/LightNovelLibrary/app/src/main/java/org/mewx/wenku8/activity/VerticalReaderActivity.java"
+   ]
+  },
+  "alcance": [
+   "studio-android/LightNovelLibrary/app/src/main/java/org/mewx/wenku8/activity/VerticalReaderActivity.java"
+  ]
+ },
+ {
+  "orden": "16",
+  "pr_id": 3815680128,
+  "repo": "StarRocks/starrocks",
+  "numero": 67956,
+  "agente": "Copilot",
+  "merged_at": "2026-01-15T10:51:18Z",
+  "commits": "14",
+  "commits_java_produccion": "11",
+  "base": "74da7c06c5a2e318b49233ef31e470553fc7eec2",
+  "secuencia": [
+   "a008142c708706e0d7d36befea2c74e8ed330919",
+   "e560a451e5317094c5ee26612c29ad1386423dbb",
+   "0b9d7d055a92285cd333e18a4860504c98b05a6b",
+   "c0d7957cc7216b95b76626e5e37e72a1a05bca70",
+   "ffdadcdd0677623cdb17ce30861d55548bf64f91",
+   "10bf49246787b482b0d6cb76609a29375bf7737e",
+   "648652a13f7f74584f8ee8693f8a4f450baf0b59",
+   "7732e351258fe4403695bf00b6da14bc8ca4fa6c",
+   "4d94c6978dd1f7b21d239b91a4803dc25d4e3b25",
+   "9453e3c289f41f0757e1ae8951f42d9b53504e35",
+   "0448dd4c2f8b397093374556e575a39d44757918",
+   "620d369b8edc3533806ca0496d10e7b3e43ee507",
+   "c4cefe1e395f026324bfc70823c1b195556de018",
+   "c15f56afa5477efea025e597631b9d33628b6b2f"
+  ],
+  "cambios_java": {
+   "a008142c708706e0d7d36befea2c74e8ed330919": [],
+   "e560a451e5317094c5ee26612c29ad1386423dbb": [
+    "fe/fe-core/src/main/java/com/starrocks/extension/DefaultExtensionContext.java",
+    "fe/fe-core/src/main/java/com/starrocks/extension/Inject.java"
+   ],
+   "0b9d7d055a92285cd333e18a4860504c98b05a6b": [
+    "fe/fe-core/src/main/java/com/starrocks/extension/DefaultExtensionContext.java"
+   ],
+   "c0d7957cc7216b95b76626e5e37e72a1a05bca70": [
+    "fe/fe-core/src/main/java/com/starrocks/extension/DefaultExtensionContext.java"
+   ],
+   "ffdadcdd0677623cdb17ce30861d55548bf64f91": [
+    "fe/fe-core/src/main/java/com/starrocks/extension/DefaultExtensionContext.java",
+    "fe/fe-core/src/main/java/com/starrocks/extension/ExtensionContext.java"
+   ],
+   "10bf49246787b482b0d6cb76609a29375bf7737e": [
+    "fe/fe-core/src/main/java/com/starrocks/extension/ConstructorMetadata.java",
+    "fe/fe-core/src/main/java/com/starrocks/extension/DefaultExtensionContext.java",
+    "fe/fe-core/src/main/java/com/starrocks/extension/ExtensionContext.java"
+   ],
+   "648652a13f7f74584f8ee8693f8a4f450baf0b59": [
+    "fe/fe-core/src/main/java/com/starrocks/extension/DefaultExtensionContext.java",
+    "fe/fe-core/src/main/java/com/starrocks/qe/scheduler/slot/BaseSlotManager.java",
+    "fe/fe-core/src/main/java/com/starrocks/server/GlobalStateMgr.java"
+   ],
+   "7732e351258fe4403695bf00b6da14bc8ca4fa6c": [
+    "fe/fe-core/src/main/java/com/starrocks/extension/DefaultExtensionContext.java"
+   ],
+   "4d94c6978dd1f7b21d239b91a4803dc25d4e3b25": [
+    "fe/fe-core/src/main/java/com/starrocks/extension/DefaultExtensionContext.java",
+    "fe/fe-core/src/main/java/com/starrocks/server/GlobalStateMgr.java"
+   ],
+   "9453e3c289f41f0757e1ae8951f42d9b53504e35": [
+    "fe/fe-core/src/main/java/com/starrocks/extension/DefaultExtensionContext.java",
+    "fe/fe-core/src/main/java/com/starrocks/extension/ExtensionContext.java",
+    "fe/fe-core/src/main/java/com/starrocks/qe/scheduler/slot/SlotManager.java"
+   ],
+   "0448dd4c2f8b397093374556e575a39d44757918": [
+    "fe/fe-core/src/main/java/com/starrocks/extension/DefaultExtensionContext.java"
+   ],
+   "620d369b8edc3533806ca0496d10e7b3e43ee507": [],
+   "c4cefe1e395f026324bfc70823c1b195556de018": [],
+   "c15f56afa5477efea025e597631b9d33628b6b2f": [
+    "fe/fe-core/src/main/java/com/starrocks/extension/DefaultExtensionContext.java"
+   ]
+  },
+  "alcance": [
+   "fe/fe-core/src/main/java/com/starrocks/extension/ConstructorMetadata.java",
+   "fe/fe-core/src/main/java/com/starrocks/extension/DefaultExtensionContext.java",
+   "fe/fe-core/src/main/java/com/starrocks/extension/ExtensionContext.java",
+   "fe/fe-core/src/main/java/com/starrocks/extension/Inject.java",
+   "fe/fe-core/src/main/java/com/starrocks/qe/scheduler/slot/BaseSlotManager.java",
+   "fe/fe-core/src/main/java/com/starrocks/qe/scheduler/slot/SlotManager.java",
+   "fe/fe-core/src/main/java/com/starrocks/server/GlobalStateMgr.java"
+  ]
+ },
+ {
+  "orden": "17",
+  "pr_id": 3723094248,
+  "repo": "opencb/opencga",
+  "numero": 2636,
+  "agente": "Copilot",
+  "merged_at": "2025-12-12T12:40:01Z",
+  "commits": "6",
+  "commits_java_produccion": "5",
+  "base": "84c1a8468d907c3a7cc61c0e2566a23e73e4c344",
+  "secuencia": [
+   "d9db1be687bb02bcddf571858e1eb20ccc3d5520",
+   "eba74f223ff67d04756c3a1daa3e62e21e0e3f4c",
+   "7a0ebf3cb300d26621ba28c52597830af28db344",
+   "2afac13e99e5f80df9b9233c81b5423e244c5fd5",
+   "0d75391463fbbfd03fa02ac6f40291cd96e49db8",
+   "c51eb01c25449281e0ba53e61f9ed7cfc4b224df"
+  ],
+  "cambios_java": {
+   "d9db1be687bb02bcddf571858e1eb20ccc3d5520": [],
+   "eba74f223ff67d04756c3a1daa3e62e21e0e3f4c": [
+    "opencga-catalog/src/main/java/org/opencb/opencga/catalog/io/PosixIOManager.java",
+    "opencga-catalog/src/main/java/org/opencb/opencga/catalog/managers/FileManager.java",
+    "opencga-core/src/main/java/org/opencb/opencga/core/api/FieldConstants.java",
+    "opencga-server/src/main/java/org/opencb/opencga/server/rest/FileWSServer.java"
+   ],
+   "7a0ebf3cb300d26621ba28c52597830af28db344": [
+    "opencga-catalog/src/main/java/org/opencb/opencga/catalog/managers/FileManager.java"
+   ],
+   "2afac13e99e5f80df9b9233c81b5423e244c5fd5": [
+    "opencga-catalog/src/main/java/org/opencb/opencga/catalog/managers/FileManager.java"
+   ],
+   "0d75391463fbbfd03fa02ac6f40291cd96e49db8": [
+    "opencga-catalog/src/main/java/org/opencb/opencga/catalog/managers/FileManager.java"
+   ],
+   "c51eb01c25449281e0ba53e61f9ed7cfc4b224df": [
+    "opencga-catalog/src/main/java/org/opencb/opencga/catalog/managers/FileManager.java",
+    "opencga-catalog/src/main/java/org/opencb/opencga/catalog/utils/FileScanner.java",
+    "opencga-server/src/main/java/org/opencb/opencga/server/rest/FileWSServer.java"
+   ]
+  },
+  "alcance": [
+   "opencga-catalog/src/main/java/org/opencb/opencga/catalog/io/PosixIOManager.java",
+   "opencga-catalog/src/main/java/org/opencb/opencga/catalog/managers/FileManager.java",
+   "opencga-catalog/src/main/java/org/opencb/opencga/catalog/utils/FileScanner.java",
+   "opencga-core/src/main/java/org/opencb/opencga/core/api/FieldConstants.java",
+   "opencga-server/src/main/java/org/opencb/opencga/server/rest/FileWSServer.java"
+  ]
+ },
+ {
+  "orden": "18",
+  "pr_id": 4024919716,
+  "repo": "CarGuo/GSYVideoPlayer",
+  "numero": 4226,
+  "agente": "Copilot",
+  "merged_at": "2026-03-12T01:31:59Z",
+  "commits": "3",
+  "commits_java_produccion": "2",
+  "base": "2d78d2d11f0aa9a3d180afd40e7c650154fa7a12",
+  "secuencia": [
+   "7042daef1c02b20212d610c92063d208cd62f962",
+   "a7ccf7e75b346a1a00c4a049fc2ff83ed9325e5c",
+   "43960e2cee1568a73bdf95587c8ec2e7e6eb6e41"
+  ],
+  "cambios_java": {
+   "7042daef1c02b20212d610c92063d208cd62f962": [],
+   "a7ccf7e75b346a1a00c4a049fc2ff83ed9325e5c": [
+    "gsyVideoPlayer-exo_player2/src/main/java/tv/danmaku/ijk/media/exo2/ExoMediaSourceInterceptListener.java"
+   ],
+   "43960e2cee1568a73bdf95587c8ec2e7e6eb6e41": [
+    "gsyVideoPlayer-exo_player2/src/main/java/tv/danmaku/ijk/media/exo2/IjkExo2MediaPlayer.java"
+   ]
+  },
+  "alcance": [
+   "gsyVideoPlayer-exo_player2/src/main/java/tv/danmaku/ijk/media/exo2/ExoMediaSourceInterceptListener.java",
+   "gsyVideoPlayer-exo_player2/src/main/java/tv/danmaku/ijk/media/exo2/IjkExo2MediaPlayer.java"
+  ]
+ },
+ {
+  "orden": "19",
+  "pr_id": 3552563546,
+  "repo": "Open-J-Proxy/ojp",
+  "numero": 68,
+  "agente": "Copilot",
+  "merged_at": "2025-10-27T16:31:54Z",
+  "commits": "28",
+  "commits_java_produccion": "5",
+  "base": "dc96abcf98189f8249d982132eab82bdbda4a8a0",
+  "secuencia": [
+   "c44b160b0e5efbaa1b7a1b18a879f24a8e2e3c7d",
+   "fe45a8a42c4ad9aa1693e0c7da03f8de975aee5e",
+   "aedce97a6edc0519700fbe9650c1f4bbf64ecd46",
+   "5ba8c3f0101e6ef844c7ebeeffefe51d33e5bd89",
+   "6a7acbd9a913e7ba89e19a4bd5925e36b14af574",
+   "9e016b3086af91d3539714ea24c79d23ef7f7835",
+   "b2cf1e7f8ba081c3df9abbba25a9964061206bde",
+   "242dca55a96b74ea40a847caea0259f7359c6e73",
+   "2587c5661742d3c4b087d6908d2087d628720ea4",
+   "e896196d561d2d817ff59cd3888bc497115a3179",
+   "e31a983c120129813399893543422e2b7d256398",
+   "602d2ff13adc394bf44e2eeb99c62a0b8198786c",
+   "4620990858313acaac6b8c2e19875b132bc491be",
+   "c8516459e305fa4a9f89e5ce68beb55abdcd7208",
+   "faddd9ffd0ce8cd9e5fce43a7aa1131e48f1085f",
+   "e21f51ea6658a72a810e8f808385941d94adf88c",
+   "767b39374519be82b4368ed8499a7bfd79cec532",
+   "647fee39edcda1e6ab426129d2d318e941f4a4a0",
+   "3cb79051d16e155db10dbe97bfa495ac3f3cc482",
+   "747f72b67eb9dad3b3501c7cb87f0c3cfe9cabaf",
+   "2485a7080fb72befb731e55ceec1e69d6165af17",
+   "5e2b0dac1629e1bcc5af6d3e51e147d0ea17648d",
+   "de6d2bed97d5ff594778245f32caa7d005f9ffdf",
+   "da626f1740bf6106ea5fd3d15042d8b9af225c0e",
+   "099189b478f2a3d8694c432da2895127b9a492fd",
+   "9ba31bda93c231f47da6e3632438c4d080298240",
+   "b8de4471e4e51ab6693455335b175532f481d596",
+   "90ddcd7f9d72e676137e931342d29134b9f03c48"
+  ],
+  "cambios_java": {
+   "c44b160b0e5efbaa1b7a1b18a879f24a8e2e3c7d": [],
+   "fe45a8a42c4ad9aa1693e0c7da03f8de975aee5e": [],
+   "aedce97a6edc0519700fbe9650c1f4bbf64ecd46": [],
+   "5ba8c3f0101e6ef844c7ebeeffefe51d33e5bd89": [],
+   "6a7acbd9a913e7ba89e19a4bd5925e36b14af574": [],
+   "9e016b3086af91d3539714ea24c79d23ef7f7835": [],
+   "b2cf1e7f8ba081c3df9abbba25a9964061206bde": [],
+   "242dca55a96b74ea40a847caea0259f7359c6e73": [],
+   "2587c5661742d3c4b087d6908d2087d628720ea4": [],
+   "e896196d561d2d817ff59cd3888bc497115a3179": [],
+   "e31a983c120129813399893543422e2b7d256398": [],
+   "602d2ff13adc394bf44e2eeb99c62a0b8198786c": [],
+   "4620990858313acaac6b8c2e19875b132bc491be": [],
+   "c8516459e305fa4a9f89e5ce68beb55abdcd7208": [],
+   "faddd9ffd0ce8cd9e5fce43a7aa1131e48f1085f": [],
+   "e21f51ea6658a72a810e8f808385941d94adf88c": [
+    "ojp-server/src/main/java/org/openjproxy/grpc/server/StatementServiceImpl.java",
+    "ojp-server/src/main/java/org/openjproxy/grpc/server/xa/XADataSourceFactory.java"
+   ],
+   "767b39374519be82b4368ed8499a7bfd79cec532": [],
+   "647fee39edcda1e6ab426129d2d318e941f4a4a0": [
+    "ojp-server/src/main/java/org/openjproxy/grpc/server/xa/XADataSourceFactory.java"
+   ],
+   "3cb79051d16e155db10dbe97bfa495ac3f3cc482": [
+    "ojp-server/src/main/java/org/openjproxy/grpc/server/xa/XADataSourceFactory.java"
+   ],
+   "747f72b67eb9dad3b3501c7cb87f0c3cfe9cabaf": [
+    "ojp-server/src/main/java/org/openjproxy/grpc/server/StatementServiceImpl.java",
+    "ojp-server/src/main/java/org/openjproxy/grpc/server/xa/XADataSourceFactory.java"
+   ],
+   "2485a7080fb72befb731e55ceec1e69d6165af17": [
+    "ojp-server/src/main/java/org/openjproxy/grpc/server/StatementServiceImpl.java"
+   ],
+   "5e2b0dac1629e1bcc5af6d3e51e147d0ea17648d": [],
+   "de6d2bed97d5ff594778245f32caa7d005f9ffdf": [],
+   "da626f1740bf6106ea5fd3d15042d8b9af225c0e": [],
+   "099189b478f2a3d8694c432da2895127b9a492fd": [],
+   "9ba31bda93c231f47da6e3632438c4d080298240": [],
+   "b8de4471e4e51ab6693455335b175532f481d596": [],
+   "90ddcd7f9d72e676137e931342d29134b9f03c48": []
+  },
+  "alcance": [
+   "ojp-server/src/main/java/org/openjproxy/grpc/server/StatementServiceImpl.java",
+   "ojp-server/src/main/java/org/openjproxy/grpc/server/xa/XADataSourceFactory.java"
+  ]
+ },
+ {
+  "orden": "20",
+  "pr_id": 3759155187,
+  "repo": "AnySoftKeyboard/AnySoftKeyboard",
+  "numero": 4585,
+  "agente": "Google_Jules",
+  "merged_at": "2025-12-25T14:14:00Z",
+  "commits": "3",
+  "commits_java_produccion": "2",
+  "base": "5cfba82072e35e0f1d926582517657f6e911e848",
+  "secuencia": [
+   "7bbd4139091de74eea640ce9aabd50d7bc90018a",
+   "ae4cd99bd11c5f176e0d9b25f577bf7ac5b791d4",
+   "cc922b8941d04b682867f8796286c963ed3e92ba"
+  ],
+  "cambios_java": {
+   "7bbd4139091de74eea640ce9aabd50d7bc90018a": [
+    "ime/app/src/main/java/com/anysoftkeyboard/utils/IMEUtil.java"
+   ],
+   "ae4cd99bd11c5f176e0d9b25f577bf7ac5b791d4": [
+    "ime/app/src/main/java/com/anysoftkeyboard/utils/IMEUtil.java"
+   ],
+   "cc922b8941d04b682867f8796286c963ed3e92ba": []
+  },
+  "alcance": [
+   "ime/app/src/main/java/com/anysoftkeyboard/utils/IMEUtil.java"
+  ]
+ },
+ {
+  "orden": "21",
+  "pr_id": 3761767355,
+  "repo": "codenameone/CodenameOne",
+  "numero": 4354,
+  "agente": "OpenAI_Codex",
+  "merged_at": "2025-12-25T11:38:41Z",
+  "commits": "2",
+  "commits_java_produccion": "2",
+  "base": "dd342533665b447eff5f3c21f499b034822dece0",
+  "secuencia": [
+   "8661c24e832b6cf806459aa7042edf57ddcdbcbc",
+   "59e76be0a08dd46818901652af221feb4fb90666"
+  ],
+  "cambios_java": {
+   "8661c24e832b6cf806459aa7042edf57ddcdbcbc": [
+    "vm/ByteCodeTranslator/src/com/codename1/tools/translator/ByteCodeClass.java",
+    "vm/ByteCodeTranslator/src/com/codename1/tools/translator/ByteCodeField.java"
+   ],
+   "59e76be0a08dd46818901652af221feb4fb90666": [
+    "vm/ByteCodeTranslator/src/com/codename1/tools/translator/ByteCodeClass.java"
+   ]
+  },
+  "alcance": [
+   "vm/ByteCodeTranslator/src/com/codename1/tools/translator/ByteCodeClass.java",
+   "vm/ByteCodeTranslator/src/com/codename1/tools/translator/ByteCodeField.java"
+  ]
+ },
+ {
+  "orden": "22",
+  "pr_id": 3654992141,
+  "repo": "FunnyGuilds/FunnyGuilds",
+  "numero": 2643,
+  "agente": "Copilot",
+  "merged_at": "2025-11-23T15:07:50Z",
+  "commits": "3",
+  "commits_java_produccion": "2",
+  "base": "c43f0ae89c048280a414578925fbb045a4dd233b",
+  "secuencia": [
+   "7034d8360535f167c1ffcb639baf22b59e39aeea",
+   "9f2c4b7154c70af8ca45fb59d59c8b85b8feb398",
+   "577d35bf5f4276556473f852bb2ab88a31012a1d"
+  ],
+  "cambios_java": {
+   "7034d8360535f167c1ffcb639baf22b59e39aeea": [],
+   "9f2c4b7154c70af8ca45fb59d59c8b85b8feb398": [
+    "plugin/src/main/java/net/dzikoysk/funnyguilds/damage/DamageState.java",
+    "plugin/src/main/java/net/dzikoysk/funnyguilds/listener/PlayerDeath.java"
+   ],
+   "577d35bf5f4276556473f852bb2ab88a31012a1d": [
+    "plugin/src/main/java/net/dzikoysk/funnyguilds/config/PluginConfiguration.java",
+    "plugin/src/main/java/net/dzikoysk/funnyguilds/damage/DamageState.java",
+    "plugin/src/main/java/net/dzikoysk/funnyguilds/listener/PlayerDeath.java"
+   ]
+  },
+  "alcance": [
+   "plugin/src/main/java/net/dzikoysk/funnyguilds/config/PluginConfiguration.java",
+   "plugin/src/main/java/net/dzikoysk/funnyguilds/damage/DamageState.java",
+   "plugin/src/main/java/net/dzikoysk/funnyguilds/listener/PlayerDeath.java"
+  ]
+ },
+ {
+  "orden": "23",
+  "pr_id": 4073619725,
+  "repo": "ShaftHQ/SHAFT_ENGINE",
+  "numero": 2334,
+  "agente": "Copilot",
+  "merged_at": "2026-03-14T01:57:47Z",
+  "commits": "7",
+  "commits_java_produccion": "6",
+  "base": "cb937d5c1bca7ac7f154497fce588f746a3644f4",
+  "secuencia": [
+   "3c14b9e298771b02c6ccc9af85f891e4092ccf67",
+   "49864ef78cf3c910ee9c4732462a1bf96e623be9",
+   "e615335adca4916ce76cf2dab8b370c1e7ef52e6",
+   "46110a84911f782c58c4418e8c607245f3bc24f9",
+   "acc71d5fb6acc0aab9e66baaab0a8a49a2593b4e",
+   "d15a14922218d63908f82d59719a698deb0c00db",
+   "74c9c510b2071c1c3fd0e88b6cbcda0f59df8255"
+  ],
+  "cambios_java": {
+   "3c14b9e298771b02c6ccc9af85f891e4092ccf67": [],
+   "49864ef78cf3c910ee9c4732462a1bf96e623be9": [
+    "src/main/java/com/shaft/gui/element/internal/Actions.java",
+    "src/main/java/com/shaft/gui/internal/image/AnimatedGifManager.java",
+    "src/main/java/com/shaft/gui/internal/image/ScreenshotManager.java",
+    "src/main/java/com/shaft/listeners/internal/UpdateChecker.java",
+    "src/main/java/com/shaft/performance/internal/LightHouseGenerateReport.java",
+    "src/main/java/com/shaft/tools/internal/support/PerformanceReportHTMLHelper.java",
+    "src/main/java/com/shaft/tools/internal/tms/XrayIntegrationHelper.java",
+    "src/main/java/com/shaft/tools/io/ExcelFileManager.java",
+    "src/main/java/com/shaft/tools/io/internal/ApiPerformanceExecutionReport.java",
+    "src/main/java/com/shaft/tools/io/internal/ExecutionSummaryReport.java",
+    "src/main/java/com/shaft/tools/io/internal/ReportHelper.java",
+    "src/main/java/com/shaft/tools/io/internal/ReportManagerHelper.java",
+    "src/main/java/com/shaft/validation/accessibility/AccessibilityHelper.java"
+   ],
+   "e615335adca4916ce76cf2dab8b370c1e7ef52e6": [
+    "src/main/java/com/shaft/tools/io/internal/ReportManagerHelper.java"
+   ],
+   "46110a84911f782c58c4418e8c607245f3bc24f9": [
+    "src/main/java/com/shaft/gui/element/internal/Actions.java",
+    "src/main/java/com/shaft/gui/internal/image/AnimatedGifManager.java",
+    "src/main/java/com/shaft/gui/internal/image/ScreenshotHelper.java",
+    "src/main/java/com/shaft/gui/internal/image/ScreenshotManager.java"
+   ],
+   "acc71d5fb6acc0aab9e66baaab0a8a49a2593b4e": [
+    "src/main/java/com/shaft/gui/internal/image/AnimatedGifManager.java",
+    "src/main/java/com/shaft/gui/internal/image/ScreenshotManager.java"
+   ],
+   "d15a14922218d63908f82d59719a698deb0c00db": [
+    "src/main/java/com/shaft/driver/internal/DriverFactory/OptionsManager.java",
+    "src/main/java/com/shaft/driver/internal/DriverFactory/SynchronizationManager.java",
+    "src/main/java/com/shaft/gui/browser/internal/JavaScriptWaitManager.java",
+    "src/main/java/com/shaft/properties/internal/PropertiesHelper.java",
+    "src/main/java/com/shaft/tools/io/internal/ReportManagerHelper.java"
+   ],
+   "74c9c510b2071c1c3fd0e88b6cbcda0f59df8255": [
+    "src/main/java/com/shaft/driver/internal/DriverFactory/SynchronizationManager.java",
+    "src/main/java/com/shaft/gui/browser/internal/JavaScriptWaitManager.java",
+    "src/main/java/com/shaft/properties/internal/PropertiesHelper.java"
+   ]
+  },
+  "alcance": [
+   "src/main/java/com/shaft/driver/internal/DriverFactory/OptionsManager.java",
+   "src/main/java/com/shaft/driver/internal/DriverFactory/SynchronizationManager.java",
+   "src/main/java/com/shaft/gui/browser/internal/JavaScriptWaitManager.java",
+   "src/main/java/com/shaft/gui/element/internal/Actions.java",
+   "src/main/java/com/shaft/gui/internal/image/AnimatedGifManager.java",
+   "src/main/java/com/shaft/gui/internal/image/ScreenshotHelper.java",
+   "src/main/java/com/shaft/gui/internal/image/ScreenshotManager.java",
+   "src/main/java/com/shaft/listeners/internal/UpdateChecker.java",
+   "src/main/java/com/shaft/performance/internal/LightHouseGenerateReport.java",
+   "src/main/java/com/shaft/properties/internal/PropertiesHelper.java",
+   "src/main/java/com/shaft/tools/internal/support/PerformanceReportHTMLHelper.java",
+   "src/main/java/com/shaft/tools/internal/tms/XrayIntegrationHelper.java",
+   "src/main/java/com/shaft/tools/io/ExcelFileManager.java",
+   "src/main/java/com/shaft/tools/io/internal/ApiPerformanceExecutionReport.java",
+   "src/main/java/com/shaft/tools/io/internal/ExecutionSummaryReport.java",
+   "src/main/java/com/shaft/tools/io/internal/ReportHelper.java",
+   "src/main/java/com/shaft/tools/io/internal/ReportManagerHelper.java",
+   "src/main/java/com/shaft/validation/accessibility/AccessibilityHelper.java"
+  ]
+ },
+ {
+  "orden": "24",
+  "pr_id": 3749961466,
+  "repo": "vavr-io/vavr",
+  "numero": 3175,
+  "agente": "Copilot",
+  "merged_at": "2025-12-20T12:50:25Z",
+  "commits": "4",
+  "commits_java_produccion": "3",
+  "base": "6d44704ab24fe0553912fd897dc8e8aa938cbf7b",
+  "secuencia": [
+   "75141c09ca15f956d6cead8ef05d16d734c58f09",
+   "0d9728d7469729299af171dbb6e308469c1bf334",
+   "2c86969bdf78ddad3b2fd942b1e86be267adc6c7",
+   "9d91288fe7b9dc1ff9bb598241fa5575bc290b2e"
+  ],
+  "cambios_java": {
+   "75141c09ca15f956d6cead8ef05d16d734c58f09": [],
+   "0d9728d7469729299af171dbb6e308469c1bf334": [
+    "vavr/src/main/java/io/vavr/collection/TreeSet.java"
+   ],
+   "2c86969bdf78ddad3b2fd942b1e86be267adc6c7": [
+    "vavr/src/main/java/io/vavr/collection/Vector.java"
+   ],
+   "9d91288fe7b9dc1ff9bb598241fa5575bc290b2e": [
+    "vavr/src/main/java/io/vavr/collection/TreeSet.java",
+    "vavr/src/main/java/io/vavr/collection/Vector.java"
+   ]
+  },
+  "alcance": [
+   "vavr/src/main/java/io/vavr/collection/TreeSet.java",
+   "vavr/src/main/java/io/vavr/collection/Vector.java"
+  ]
+ },
+ {
+  "orden": "25",
+  "pr_id": 3827869634,
+  "repo": "binarywang/WxJava",
+  "numero": 3863,
+  "agente": "Copilot",
+  "merged_at": "2026-03-03T08:04:31Z",
+  "commits": "3",
+  "commits_java_produccion": "2",
+  "base": "373d9fa5f1de74700cb31e85b6a60a182aa839e1",
+  "secuencia": [
+   "8512374940a5390f56d2e93fd6885fe001f86fee",
+   "742e757f1d7d8f30e2877178fd1d2258e15985b0",
+   "59b728f59c79ffce0e35b20a5a848fff3097c5a3"
+  ],
+  "cambios_java": {
+   "8512374940a5390f56d2e93fd6885fe001f86fee": [],
+   "742e757f1d7d8f30e2877178fd1d2258e15985b0": [
+    "weixin-java-pay/src/main/java/com/github/binarywang/wxpay/service/WxPayService.java",
+    "weixin-java-pay/src/main/java/com/github/binarywang/wxpay/service/impl/BaseWxPayServiceImpl.java"
+   ],
+   "59b728f59c79ffce0e35b20a5a848fff3097c5a3": [
+    "weixin-java-pay/src/main/java/com/github/binarywang/wxpay/service/impl/BaseWxPayServiceImpl.java"
+   ]
+  },
+  "alcance": [
+   "weixin-java-pay/src/main/java/com/github/binarywang/wxpay/service/WxPayService.java",
+   "weixin-java-pay/src/main/java/com/github/binarywang/wxpay/service/impl/BaseWxPayServiceImpl.java"
+  ]
+ },
+ {
+  "orden": "26",
+  "pr_id": 3803296638,
+  "repo": "enonic/xp",
+  "numero": 11655,
+  "agente": "Copilot",
+  "merged_at": "2026-02-10T06:35:29Z",
+  "commits": "6",
+  "commits_java_produccion": "5",
+  "base": "18025626320c01c9cdf97474f4adffbdf75398ab",
+  "secuencia": [
+   "d5ede86f146503e342eda075d7c086a069bfa87d",
+   "a6c15a0cb0fcb08bb90cbac3dbd7970b997470c7",
+   "4a0bc04e930596e951978a888b34e9ae44539a45",
+   "6506b0284843e07c9441cf9238fe73233423d674",
+   "2c3c5c2504b9c827791aef518e83e25963953845",
+   "5ef27bc6f19844656b9f807e41fa922e54bec932"
+  ],
+  "cambios_java": {
+   "d5ede86f146503e342eda075d7c086a069bfa87d": [],
+   "a6c15a0cb0fcb08bb90cbac3dbd7970b997470c7": [
+    "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/app/WebAppHandler.java"
+   ],
+   "4a0bc04e930596e951978a888b34e9ae44539a45": [
+    "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/app/WebAppHandler.java"
+   ],
+   "6506b0284843e07c9441cf9238fe73233423d674": [
+    "modules/admin/admin-impl/src/main/java/com/enonic/xp/admin/impl/portal/AdminSiteHandler.java",
+    "modules/admin/admin-impl/src/main/java/com/enonic/xp/admin/impl/portal/AdminToolHandler.java",
+    "modules/admin/admin-impl/src/main/java/com/enonic/xp/admin/impl/portal/AdminToolPortalHandler.java",
+    "modules/admin/admin-impl/src/main/java/com/enonic/xp/admin/impl/portal/widget/WidgetApiHandler.java",
+    "modules/admin/admin-impl/src/main/java/com/enonic/xp/admin/impl/portal/widget/WidgetDispatcherApiHandler.java",
+    "modules/core/core-api/src/main/java/com/enonic/xp/site/SiteConfigs.java",
+    "modules/core/core-api/src/main/java/com/enonic/xp/trace/TraceIO.java",
+    "modules/core/core-api/src/main/java/com/enonic/xp/trace/Tracer.java",
+    "modules/portal/portal-api/src/main/java/com/enonic/xp/portal/PortalRequest.java",
+    "modules/portal/portal-api/src/main/java/com/enonic/xp/portal/handler/EndpointHandler.java",
+    "modules/portal/portal-api/src/main/java/com/enonic/xp/portal/handler/WebHandlerHelper.java",
+    "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/PortalConfig.java",
+    "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/PortalRequestHelper.java",
+    "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/app/AppPortalHandler.java",
+    "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/app/WebAppHandler.java",
+    "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/app/WebAppPortalHandler.java",
+    "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/exception/ExceptionRendererImpl.java",
+    "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/handler/AbstractAttachmentHandlerWorker.java",
+    "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/handler/ApiDispatcher.java",
+    "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/handler/AssetHandler.java",
+    "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/handler/AttachmentHandler.java",
+    "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/handler/ComponentHandler.java",
+    "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/handler/ErrorHandler.java",
+    "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/handler/HandlerHelper.java",
+    "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/handler/IdentityHandler.java",
+    "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/handler/ImageHandler.java",
+    "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/handler/PathMatchers.java",
+    "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/handler/ServiceHandler.java",
+    "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/handler/SlashApiHandler.java",
+    "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/handler/api/ApiHandler.java",
+    "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/handler/api/ApiIndexHandler.java",
+    "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/handler/mapping/AttachmentServiceMappingHandler.java",
+    "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/handler/mapping/ComponentServiceMappingHandler.java",
+    "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/handler/mapping/ImageServiceMappingHandler.java",
+    "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/handler/mapping/MappingHandlerHelper.java",
+    "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/handler/portal/SiteHandler.java",
+    "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/handler/render/PageHandlerWorker.java",
+    "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/idprovider/PortalRequestAdapter.java",
+    "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/macro/EmbedIframeMacroProcessor.java",
+    "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/url/ContentBaseUrlResolver.java",
+    "modules/web/web-api/src/main/java/com/enonic/xp/web/HttpMethod.java",
+    "modules/web/web-api/src/main/java/com/enonic/xp/web/WebRequest.java",
+    "modules/web/web-impl/src/main/java/com/enonic/xp/web/impl/serializer/RequestSerializer.java",
+    "modules/web/web-impl/src/main/java/com/enonic/xp/web/impl/trace/TraceWebFilter.java",
+    "modules/web/web-vhost/src/main/java/com/enonic/xp/web/vhost/impl/VirtualHostFilter.java",
+    "modules/web/web-vhost/src/main/java/com/enonic/xp/web/vhost/impl/VirtualHostInternalHelper.java",
+    "modules/web/web-vhost/src/main/java/com/enonic/xp/web/vhost/impl/VirtualHostRequestWrapper.java",
+    "modules/web/web-vhost/src/main/java/com/enonic/xp/web/vhost/impl/VirtualHostResolverImpl.java"
+   ],
+   "2c3c5c2504b9c827791aef518e83e25963953845": [
+    "modules/web/web-api/src/main/java/com/enonic/xp/web/servlet/ServletRequestUrlHelper.java"
+   ],
+   "5ef27bc6f19844656b9f807e41fa922e54bec932": [
+    "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/handler/IdentityHandler.java"
+   ]
+  },
+  "alcance": [
+   "modules/admin/admin-impl/src/main/java/com/enonic/xp/admin/impl/portal/AdminSiteHandler.java",
+   "modules/admin/admin-impl/src/main/java/com/enonic/xp/admin/impl/portal/AdminToolHandler.java",
+   "modules/admin/admin-impl/src/main/java/com/enonic/xp/admin/impl/portal/AdminToolPortalHandler.java",
+   "modules/admin/admin-impl/src/main/java/com/enonic/xp/admin/impl/portal/widget/WidgetApiHandler.java",
+   "modules/admin/admin-impl/src/main/java/com/enonic/xp/admin/impl/portal/widget/WidgetDispatcherApiHandler.java",
+   "modules/core/core-api/src/main/java/com/enonic/xp/site/SiteConfigs.java",
+   "modules/core/core-api/src/main/java/com/enonic/xp/trace/TraceIO.java",
+   "modules/core/core-api/src/main/java/com/enonic/xp/trace/Tracer.java",
+   "modules/portal/portal-api/src/main/java/com/enonic/xp/portal/PortalRequest.java",
+   "modules/portal/portal-api/src/main/java/com/enonic/xp/portal/handler/EndpointHandler.java",
+   "modules/portal/portal-api/src/main/java/com/enonic/xp/portal/handler/WebHandlerHelper.java",
+   "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/PortalConfig.java",
+   "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/PortalRequestHelper.java",
+   "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/app/AppPortalHandler.java",
+   "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/app/WebAppHandler.java",
+   "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/app/WebAppPortalHandler.java",
+   "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/exception/ExceptionRendererImpl.java",
+   "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/handler/AbstractAttachmentHandlerWorker.java",
+   "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/handler/ApiDispatcher.java",
+   "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/handler/AssetHandler.java",
+   "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/handler/AttachmentHandler.java",
+   "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/handler/ComponentHandler.java",
+   "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/handler/ErrorHandler.java",
+   "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/handler/HandlerHelper.java",
+   "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/handler/IdentityHandler.java",
+   "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/handler/ImageHandler.java",
+   "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/handler/PathMatchers.java",
+   "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/handler/ServiceHandler.java",
+   "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/handler/SlashApiHandler.java",
+   "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/handler/api/ApiHandler.java",
+   "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/handler/api/ApiIndexHandler.java",
+   "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/handler/mapping/AttachmentServiceMappingHandler.java",
+   "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/handler/mapping/ComponentServiceMappingHandler.java",
+   "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/handler/mapping/ImageServiceMappingHandler.java",
+   "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/handler/mapping/MappingHandlerHelper.java",
+   "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/handler/portal/SiteHandler.java",
+   "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/handler/render/PageHandlerWorker.java",
+   "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/idprovider/PortalRequestAdapter.java",
+   "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/macro/EmbedIframeMacroProcessor.java",
+   "modules/portal/portal-impl/src/main/java/com/enonic/xp/portal/impl/url/ContentBaseUrlResolver.java",
+   "modules/web/web-api/src/main/java/com/enonic/xp/web/HttpMethod.java",
+   "modules/web/web-api/src/main/java/com/enonic/xp/web/WebRequest.java",
+   "modules/web/web-api/src/main/java/com/enonic/xp/web/servlet/ServletRequestUrlHelper.java",
+   "modules/web/web-impl/src/main/java/com/enonic/xp/web/impl/serializer/RequestSerializer.java",
+   "modules/web/web-impl/src/main/java/com/enonic/xp/web/impl/trace/TraceWebFilter.java",
+   "modules/web/web-vhost/src/main/java/com/enonic/xp/web/vhost/impl/VirtualHostFilter.java",
+   "modules/web/web-vhost/src/main/java/com/enonic/xp/web/vhost/impl/VirtualHostInternalHelper.java",
+   "modules/web/web-vhost/src/main/java/com/enonic/xp/web/vhost/impl/VirtualHostRequestWrapper.java",
+   "modules/web/web-vhost/src/main/java/com/enonic/xp/web/vhost/impl/VirtualHostResolverImpl.java"
+  ]
+ },
+ {
+  "orden": "28",
+  "pr_id": 3437673678,
+  "repo": "frostwire/frostwire",
+  "numero": 1116,
+  "agente": "Copilot",
+  "merged_at": "2025-09-21T02:30:47Z",
+  "commits": "6",
+  "commits_java_produccion": "4",
+  "base": "fa046c9f333c7da31ef991e41ea43f8309995d86",
+  "secuencia": [
+   "60a63ee1d79dbc9ee19b9501c6c7e26e454504f6",
+   "359a0a2edda5333f461462f47487ef4e21d4f329",
+   "f600a603c87b113b6aa37daef80858717c922e5c",
+   "dcd5c67a8e587fe800c9997d4fdf5b4142f8198d",
+   "fbf76acc6eec18d452f646f4459d9ed87e948bc3",
+   "250aa76bfa904570cc7b5ef50cb4a13e8630cd84"
+  ],
+  "cambios_java": {
+   "60a63ee1d79dbc9ee19b9501c6c7e26e454504f6": [],
+   "359a0a2edda5333f461462f47487ef4e21d4f329": [
+    "desktop/src/com/frostwire/gui/bittorrent/CreateTorrentDialog.java",
+    "desktop/src/com/frostwire/gui/bittorrent/TorrentType.java",
+    "desktop/src/com/frostwire/gui/bittorrent/TorrentUtil.java"
+   ],
+   "f600a603c87b113b6aa37daef80858717c922e5c": [],
+   "dcd5c67a8e587fe800c9997d4fdf5b4142f8198d": [
+    "desktop/src/com/frostwire/gui/bittorrent/CreateTorrentDialog.java",
+    "desktop/src/com/frostwire/gui/bittorrent/TorrentUtil.java"
+   ],
+   "fbf76acc6eec18d452f646f4459d9ed87e948bc3": [
+    "common/src/main/java/com/frostwire/bittorrent/BTDownload.java",
+    "common/src/main/java/com/frostwire/bittorrent/BTEngine.java",
+    "desktop/src/com/frostwire/gui/bittorrent/TorrentUtil.java",
+    "desktop/src/com/limegroup/gnutella/gui/GUIMediator.java"
+   ],
+   "250aa76bfa904570cc7b5ef50cb4a13e8630cd84": [
+    "common/src/main/java/com/frostwire/bittorrent/BTDownload.java",
+    "common/src/main/java/com/frostwire/bittorrent/BTEngine.java",
+    "desktop/src/com/limegroup/gnutella/gui/GUIMediator.java"
+   ]
+  },
+  "alcance": [
+   "common/src/main/java/com/frostwire/bittorrent/BTDownload.java",
+   "common/src/main/java/com/frostwire/bittorrent/BTEngine.java",
+   "desktop/src/com/frostwire/gui/bittorrent/CreateTorrentDialog.java",
+   "desktop/src/com/frostwire/gui/bittorrent/TorrentType.java",
+   "desktop/src/com/frostwire/gui/bittorrent/TorrentUtil.java",
+   "desktop/src/com/limegroup/gnutella/gui/GUIMediator.java"
+  ]
+ }
+]

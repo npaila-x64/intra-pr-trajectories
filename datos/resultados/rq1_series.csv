@@ -1,0 +1,76 @@
+pr_id,repo,numero,agente,estados,estados_originales,metrica,serie,neto,forma,cambios_direccion,o_mas,o_menos,o_mas_rel,medible
+3940935974,langchain4j/langchain4j,4584,OpenAI_Codex,7,7,ncss,121 121 121 127 135 127 127,6,no_monotona,1,8,0,0.063,True
+3940935974,langchain4j/langchain4j,4584,OpenAI_Codex,7,7,ciclomatica,36 36 36 37 40 38 38,2,no_monotona,1,2,0,0.053,True
+3940935974,langchain4j/langchain4j,4584,OpenAI_Codex,7,7,hallazgos,4 4 4 4 4 4 4,0,estable,0,0,0,0.0,True
+3751098999,binarywang/WxJava,3817,Copilot,4,11,ncss,128 128 128 128,0,estable,0,0,0,0.0,True
+3751098999,binarywang/WxJava,3817,Copilot,4,11,ciclomatica,64 64 64 64,0,estable,0,0,0,0.0,True
+3751098999,binarywang/WxJava,3817,Copilot,4,11,hallazgos,0 0 0 0,0,estable,0,0,0,,True
+4113039889,xcancloud/AngusInfra,114,Copilot,4,9,ncss,1175 1204 1217 1307,132,monotona,0,0,0,0.0,True
+4113039889,xcancloud/AngusInfra,114,Copilot,4,9,ciclomatica,436 449 449 479,43,monotona,0,0,0,0.0,True
+4113039889,xcancloud/AngusInfra,114,Copilot,4,9,hallazgos,22 22 22 22,0,estable,0,0,0,0.0,True
+3902872473,HangarMC/Hangar,1537,Copilot,10,14,ncss,449 646 646 378 378 378 378 392 394 417,-32,no_monotona,2,197,39,0.439,True
+3902872473,HangarMC/Hangar,1537,Copilot,10,14,ciclomatica,203 298 295 175 175 177 177 178 178 197,-6,no_monotona,2,95,22,0.468,True
+3902872473,HangarMC/Hangar,1537,Copilot,10,14,hallazgos,7 14 14 7 7 7 7 7 7 7,0,no_monotona,1,7,0,1.0,True
+3783599847,codenameone/CodenameOne,4383,OpenAI_Codex,7,7,ncss,13746 13716 13717 13717 13717 13715 13715,-31,no_monotona,2,0,0,0.0,True
+3783599847,codenameone/CodenameOne,4383,OpenAI_Codex,7,7,ciclomatica,4959 4961 4961 4961 4961 4961 4961,2,monotona,0,0,0,0.0,True
+3783599847,codenameone/CodenameOne,4383,OpenAI_Codex,7,7,hallazgos,411 396 396 396 396 396 396,-15,monotona,0,0,0,0.0,True
+3523327685,tbsalling/aismessages,73,Copilot,6,7,ncss,103 115 113 124 127 127,24,no_monotona,2,0,0,0.0,True
+3523327685,tbsalling/aismessages,73,Copilot,6,7,ciclomatica,34 41 39 43 44 44,10,no_monotona,2,0,0,0.0,True
+3523327685,tbsalling/aismessages,73,Copilot,6,7,hallazgos,3 4 3 3 3 3,0,no_monotona,1,1,0,0.333,True
+3526768331,codenameone/CodenameOne,3978,OpenAI_Codex,3,3,ncss,6595 6530 6530,-65,monotona,0,0,0,0.0,True
+3526768331,codenameone/CodenameOne,3978,OpenAI_Codex,3,3,ciclomatica,2771 2762 2763,-8,no_monotona,1,0,1,0.0,True
+3526768331,codenameone/CodenameOne,3978,OpenAI_Codex,3,3,hallazgos,171 152 152,-19,monotona,0,0,0,0.0,True
+3767602710,farfromrefug/EnforceDoze,57,Copilot,4,5,ncss,835 844 838 838,3,no_monotona,1,6,0,0.007,True
+3767602710,farfromrefug/EnforceDoze,57,Copilot,4,5,ciclomatica,263 268 264 264,1,no_monotona,1,4,0,0.015,True
+3767602710,farfromrefug/EnforceDoze,57,Copilot,4,5,hallazgos,42 44 40 40,-2,no_monotona,1,2,0,0.048,True
+3994588891,StarRocks/starrocks,69523,Copilot,3,5,ncss,677 679 677,0,no_monotona,1,2,0,0.003,True
+3994588891,StarRocks/starrocks,69523,Copilot,3,5,ciclomatica,275 276 275,0,no_monotona,1,1,0,0.004,True
+3994588891,StarRocks/starrocks,69523,Copilot,3,5,hallazgos,19 19 19,0,estable,0,0,0,0.0,True
+3264573288,Open-J-Proxy/ojp,15,Copilot,5,14,ncss,2875 2894 2926 2962 2980,105,monotona,0,0,0,0.0,True
+3264573288,Open-J-Proxy/ojp,15,Copilot,5,14,ciclomatica,1124 1131 1145 1157 1164,40,monotona,0,0,0,0.0,True
+3264573288,Open-J-Proxy/ojp,15,Copilot,5,14,hallazgos,22 22 26 29 29,7,monotona,0,0,0,0.0,True
+3562231060,kenjdavidson/react-native-bluetooth-classic,361,Copilot,3,4,ncss,405 415 418,13,monotona,0,0,0,0.0,True
+3562231060,kenjdavidson/react-native-bluetooth-classic,361,Copilot,3,4,ciclomatica,148 156 157,9,monotona,0,0,0,0.0,True
+3562231060,kenjdavidson/react-native-bluetooth-classic,361,Copilot,3,4,hallazgos,9 10 10,1,monotona,0,0,0,0.0,True
+3769974631,ClementGre/PDF4Teachers,223,Copilot,7,8,ncss,3101 3347 3366 3373 3380 3368 3365,264,no_monotona,1,15,0,0.004,True
+3769974631,ClementGre/PDF4Teachers,223,Copilot,7,8,ciclomatica,953 1030 1039 1040 1044 1038 1037,84,no_monotona,1,7,0,0.007,True
+3769974631,ClementGre/PDF4Teachers,223,Copilot,7,8,hallazgos,110 114 117 117 117 114 114,4,no_monotona,1,3,0,0.026,True
+3837458181,MewX/light-novel-library_Wenku8_Android,158,Google_Jules,4,4,ncss,145 145 145 145,0,estable,0,0,0,0.0,True
+3837458181,MewX/light-novel-library_Wenku8_Android,158,Google_Jules,4,4,ciclomatica,47 47 47 47,0,estable,0,0,0,0.0,True
+3837458181,MewX/light-novel-library_Wenku8_Android,158,Google_Jules,4,4,hallazgos,2 2 2 2,0,estable,0,0,0,0.0,True
+3815680128,StarRocks/starrocks,67956,Copilot,12,15,ncss,1513 1562 1562 1562 1563 1563 1570 1571 1572 1572 1569 1569,56,no_monotona,1,3,0,0.002,True
+3815680128,StarRocks/starrocks,67956,Copilot,12,15,ciclomatica,474 494 494 494 495 495 497 497 497 497 497 497,23,monotona,0,0,0,0.0,True
+3815680128,StarRocks/starrocks,67956,Copilot,12,15,hallazgos,10 12 12 12 12 12 12 12 12 12 12 12,2,monotona,0,0,0,0.0,True
+3723094248,opencb/opencga,2636,Copilot,6,7,ncss,3381 3381 3380 3380 3380 3378,-3,monotona,0,0,0,0.0,True
+3723094248,opencb/opencga,2636,Copilot,6,7,ciclomatica,1072 1072 1071 1071 1071 1069,-3,monotona,0,0,0,0.0,True
+3723094248,opencb/opencga,2636,Copilot,6,7,hallazgos,103 103 103 103 103 101,-2,monotona,0,0,0,0.0,True
+4024919716,CarGuo/GSYVideoPlayer,4226,Copilot,3,4,ncss,287 287 287,0,estable,0,0,0,0.0,True
+4024919716,CarGuo/GSYVideoPlayer,4226,Copilot,3,4,ciclomatica,147 147 148,1,monotona,0,0,0,0.0,True
+4024919716,CarGuo/GSYVideoPlayer,4226,Copilot,3,4,hallazgos,3 3 4,1,monotona,0,0,0,0.0,True
+3552563546,Open-J-Proxy/ojp,68,Copilot,6,29,ncss,836 950 982 987 998 998,162,monotona,0,0,0,0.0,True
+3552563546,Open-J-Proxy/ojp,68,Copilot,6,29,ciclomatica,320 366 373 373 378 379,59,monotona,0,0,0,0.0,True
+3552563546,Open-J-Proxy/ojp,68,Copilot,6,29,hallazgos,21 20 24 24 26 26,5,no_monotona,1,0,1,0.0,True
+3759155187,AnySoftKeyboard/AnySoftKeyboard,4585,Google_Jules,3,4,ncss,68 68 68,0,estable,0,0,0,0.0,True
+3759155187,AnySoftKeyboard/AnySoftKeyboard,4585,Google_Jules,3,4,ciclomatica,29 26 26,-3,monotona,0,0,0,0.0,True
+3759155187,AnySoftKeyboard/AnySoftKeyboard,4585,Google_Jules,3,4,hallazgos,1 0 0,-1,monotona,0,0,0,0.0,True
+3761767355,codenameone/CodenameOne,4354,OpenAI_Codex,3,3,ncss,1111 1164 1164,53,monotona,0,0,0,0.0,True
+3761767355,codenameone/CodenameOne,4354,OpenAI_Codex,3,3,ciclomatica,366 373 373,7,monotona,0,0,0,0.0,True
+3761767355,codenameone/CodenameOne,4354,OpenAI_Codex,3,3,hallazgos,29 30 30,1,monotona,0,0,0,0.0,True
+3654992141,FunnyGuilds/FunnyGuilds,2643,Copilot,3,4,ncss,577 599 604,27,monotona,0,0,0,0.0,True
+3654992141,FunnyGuilds/FunnyGuilds,2643,Copilot,3,4,ciclomatica,131 142 146,15,monotona,0,0,0,0.0,True
+3654992141,FunnyGuilds/FunnyGuilds,2643,Copilot,3,4,hallazgos,5 5 7,2,monotona,0,0,0,0.0,True
+4073619725,ShaftHQ/SHAFT_ENGINE,2334,Copilot,7,8,ncss,2374 2388 2387 2397 2397 2410 2410,36,no_monotona,2,0,0,0.0,True
+4073619725,ShaftHQ/SHAFT_ENGINE,2334,Copilot,7,8,ciclomatica,806 807 807 810 810 817 817,11,monotona,0,0,0,0.0,True
+4073619725,ShaftHQ/SHAFT_ENGINE,2334,Copilot,7,8,hallazgos,56 56 56 57 57 58 58,2,monotona,0,0,0,0.0,True
+3749961466,vavr-io/vavr,3175,Copilot,4,5,ncss,846 846 846 846,0,estable,0,0,0,0.0,True
+3749961466,vavr-io/vavr,3175,Copilot,4,5,ciclomatica,381 381 381 381,0,estable,0,0,0,0.0,True
+3749961466,vavr-io/vavr,3175,Copilot,4,5,hallazgos,2 2 2 2,0,estable,0,0,0,0.0,True
+3827869634,binarywang/WxJava,3863,Copilot,3,4,ncss,976 1000 995,19,no_monotona,1,5,0,0.005,True
+3827869634,binarywang/WxJava,3863,Copilot,3,4,ciclomatica,387 397 395,8,no_monotona,1,2,0,0.005,True
+3827869634,binarywang/WxJava,3863,Copilot,3,4,hallazgos,2 2 2,0,estable,0,0,0,0.0,True
+3803296638,enonic/xp,11655,Copilot,6,7,ncss,2115 2121 2121 2031 2028 2028,-87,no_monotona,1,6,0,0.003,True
+3803296638,enonic/xp,11655,Copilot,6,7,ciclomatica,782 784 784 735 741 741,-41,no_monotona,2,2,6,0.003,True
+3803296638,enonic/xp,11655,Copilot,6,7,hallazgos,16 16 16 15 14 14,-2,monotona,0,0,0,0.0,True
+3437673678,frostwire/frostwire,1116,Copilot,5,7,ncss,1889 1955 1948 1987 1991,102,no_monotona,2,0,0,0.0,True
+3437673678,frostwire/frostwire,1116,Copilot,5,7,ciclomatica,713 733 729 748 749,36,no_monotona,2,0,0,0.0,True
+3437673678,frostwire/frostwire,1116,Copilot,5,7,hallazgos,47 47 47 49 50,3,monotona,0,0,0,0.0,True

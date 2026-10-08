@@ -1,0 +1,8 @@
+# Regenerables: clones sin blobs, estados materializados, y reportes de PMD
+datos/repos/
+datos/estados/
+# Herramientas descargadas
+herramientas/
+# Entorno de Python
+.venv/
+__pycache__/

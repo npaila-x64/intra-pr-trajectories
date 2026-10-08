@@ -1,0 +1,5 @@
+orden,pr_id,repo,numero,agente,merged_at,commits,commits_java_produccion,motivo
+0,3933910388,Yelp/nrtsearch,928,Claude_Code,2026-03-20T17:43:18Z,9,9,historia_no_lineal
+10,3500033171,ta4j/ta4j,1332,OpenAI_Codex,2025-10-14T21:49:26Z,12,9,historia_no_lineal
+15,4128117129,vaadin/flow,23978,Claude_Code,2026-03-31T11:38:24Z,8,7,historia_no_lineal
+27,3585604865,prometheus/client_java,1662,Copilot,2025-11-04T13:15:39Z,8,6,historia_no_lineal
