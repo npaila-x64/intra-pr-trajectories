@@ -1,13 +1,13 @@
-# Evolución intra-PR de métricas estructurales y hallazgos estáticos
+# Evolución intra-PR de métricas y hallazgos estáticos
 
-Paquete de réplica **parcial** del estudio *Evolución intra-PR de métricas estructurales y
-hallazgos estáticos en contribuciones Java asociadas a agentes de IA* (Etapa 2: diseño
-metodológico y resultados preliminares). Contiene la implementación mínima que reconstruye
+Paquete de réplica **parcial** del estudio *Evolución intra-PR de métricas y hallazgos
+estáticos en contribuciones de agentes de IA* (Etapa 2: diseño metodológico y resultados
+preliminares). Contiene la implementación mínima que reconstruye
 las trayectorias de pull requests (PRs) asociados a agentes, mide cada estado con PMD, y
 analiza las tres preguntas de investigación sobre una muestra piloto de 25 PRs.
 
-- **Versión de esta entrega:** `[PENDIENTE: etiqueta]` (commit `[PENDIENTE]`)
-- **Zenodo:** `[PENDIENTE: DOI]`
+- **Versión de esta entrega:** etiqueta [`v0.2-etapa2`](https://github.com/npaila-x64/intra-pr-trajectories/tree/v0.2-etapa2)
+- **Zenodo:** [10.5281/zenodo.23229081](https://doi.org/10.5281/zenodo.23229081)
 
 ## Preguntas de investigación
 
