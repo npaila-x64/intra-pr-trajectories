@@ -17,13 +17,13 @@ Salida en datos/resultados/ y una muestra para auditoría manual.
 """
 import csv
 import difflib
-import functools
-import hashlib
 import json
 import random
 import re
 from collections import Counter, defaultdict
 from pathlib import Path
+
+from comun import normalizar, sentencia
 
 ETAPA2 = Path(__file__).resolve().parents[1]
 DATOS = ETAPA2 / 'datos'
@@ -34,6 +34,7 @@ TIPOS = {'class', 'interface', 'enum', 'record', 'annotation'}
 # Reglas que se reportan sobre la declaración del método: el método identifica al hallazgo.
 REGLAS_METODO = {'CognitiveComplexity', 'NPathComplexity', 'ExcessiveParameterList'}
 SIMILITUD_MINIMA = 0.5
+SUPRESIONES = {}  # (pr_id, estado, archivo) -> marcas de supresión
 
 
 def leer(nombre):
@@ -52,29 +53,19 @@ def escribir(nombre, filas):
 
 # ---------- Estados distintos ----------
 
-def huella(directorio):
-    h = hashlib.sha256()
-    if directorio.exists():
-        for f in sorted(p for p in directorio.rglob('*') if p.is_file()):
-            h.update(str(f.relative_to(directorio)).encode())
-            h.update(f.read_bytes())
-    return h.hexdigest()
-
-
-def estados_distintos(t):
+def estados_distintos(t, huellas):
     """Índices de los estados que difieren del estado anterior dentro del alcance."""
-    ruta = DATOS / 'estados' / str(t['pr_id'])
     conservados, previa = [], None
     for i in range(len(t['secuencia']) + 1):
-        actual = huella(ruta / str(i))
+        actual = huellas[i]
         if actual != previa:
             conservados.append(i)
         previa = actual
     return conservados
 
 
-def colapsar(t, metricas, hallazgos):
-    conservados = estados_distintos(t)
+def colapsar(t, metricas, hallazgos, huellas):
+    conservados = estados_distintos(t, huellas)
     nuevo = {v: k for k, v in enumerate(conservados)}
     t = {**t, 'secuencia': [t['secuencia'][i - 1] for i in conservados[1:]],
          'estados_originales': len(t['secuencia']) + 1, 'indices': conservados}
@@ -111,39 +102,20 @@ def series(t, metricas, hallazgos, errores):
 
 # ---------- RQ2 ----------
 
-def normalizar(texto):
-    return re.sub(r'\s+', '', texto)
-
-
-def sentencia(h):
-    """Sentencia reportada: el fragmento normalizado hasta la primera llave o punto y coma."""
-    m = re.match(r'[^{;]*[{;]?', normalizar(h['fragmento']))
-    return m.group(0) if m else ''
-
-
-@functools.lru_cache(maxsize=4096)
-def texto_archivo(pr_id, estado_original, archivo):
-    try:
-        ruta = DATOS / 'estados' / str(pr_id) / str(estado_original) / archivo
-        return normalizar(ruta.read_text(errors='replace'))
-    except OSError:
-        return ''
-
-
 def compatibles(a, b, exigir_modificacion):
     """Para reglas de sentencia, acepta la misma sentencia; si cambió, exige que sea
     similar y, si se pide, que haya sido modificada: que ninguna de las dos versiones
     aparezca intacta en el otro estado."""
     if a['regla'] in REGLAS_METODO:
         return True
-    sa, sb = sentencia(a), sentencia(b)
+    sa, sb = sentencia(a['fragmento']), sentencia(b['fragmento'])
     if sa == sb:
         return True  # misma sentencia; solo cambió el código que la rodea
     if difflib.SequenceMatcher(None, sa, sb).ratio() < SIMILITUD_MINIMA:
         return False
     if exigir_modificacion:
-        en_despues = sa in texto_archivo(b['pr_id'], b['estado_original'], b['archivo'])
-        en_antes = sb in texto_archivo(a['pr_id'], a['estado_original'], a['archivo'])
+        en_despues = a['sentencia_en_siguiente'] == 'True'
+        en_antes = b['sentencia_en_anterior'] == 'True'
         return not en_despues and not en_antes
     return True
 
@@ -212,10 +184,6 @@ def entidades(metricas_estado):
         else:
             metodos.add((m['archivo'], m['clase'], m['entidad'].split('(')[0]))
     return clases, metodos
-
-
-def supresiones(texto):
-    return texto.count('NOPMD') + len(re.findall(r'SuppressWarnings\([^)]*PMD', texto))
 
 
 def renombrados(met_antes, met_despues):
@@ -293,14 +261,10 @@ def seguir(t, hallazgos, metricas):
                 c['causa'] = 'entidad_eliminada'
             else:
                 c['causa'] = 'diagnostico_desaparece'
-                ruta = DATOS / 'estados' / str(t['pr_id'])
-                try:
-                    a = (ruta / str(t['indices'][e]) / h['archivo']).read_text(errors='replace')
-                    d = (ruta / str(t['indices'][e + 1]) / h['archivo']).read_text(errors='replace')
-                    if supresiones(d) > supresiones(a):
-                        c['causa'] = 'supresion'
-                except OSError:
-                    pass
+                a = SUPRESIONES.get((t['pr_id'], t['indices'][e], h['archivo']))
+                d = SUPRESIONES.get((t['pr_id'], t['indices'][e + 1], h['archivo']))
+                if a is not None and d is not None and d > a:
+                    c['causa'] = 'supresion'
         for j, h in enumerate(despues):
             if j not in nuevas:
                 c = {'estados': [e + 1], 'items': [h], 'indeterminado': j in amb_d}
@@ -336,12 +300,14 @@ def excursiones(serie):
 
 
 def main():
-    if not (DATOS / 'estados').is_dir():
-        raise SystemExit('Faltan los estados materializados en datos/estados/: ejecute '
-                         'scripts/medir_estados.py.')
     RES.mkdir(exist_ok=True)
     trayectorias = json.loads((DATOS / 'trayectorias.json').read_text())
     metricas, hallazgos, estados = leer('metricas'), leer('hallazgos'), leer('estados')
+    for f in leer('archivos'):
+        SUPRESIONES[(int(f['pr_id']), int(f['estado']), f['archivo'])] = int(f['supresiones'])
+    huellas = defaultdict(dict)
+    for e in estados:
+        huellas[int(e['pr_id'])][int(e['estado'])] = e['huella']
     por_pr = lambda filas: {k: [f for f in filas if int(f['pr_id']) == k]
                             for k in {t['pr_id'] for t in trayectorias}}
     m_pr, h_pr = por_pr(metricas), por_pr(hallazgos)
@@ -352,7 +318,7 @@ def main():
     filas_rq1, filas_rq3, cadenas, enlaces, excluidos = [], [], [], [], []
     analizadas = []
     for t in trayectorias:
-        t, m_t, h_t = colapsar(t, m_pr[t['pr_id']], h_pr[t['pr_id']])
+        t, m_t, h_t = colapsar(t, m_pr[t['pr_id']], h_pr[t['pr_id']], huellas[t['pr_id']])
         if len(t['secuencia']) + 1 < 3:
             excluidos.append({'pr_id': t['pr_id'], 'repo': t['repo'], 'numero': t['numero'],
                               'estados_originales': t['estados_originales'],

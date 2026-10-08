@@ -35,7 +35,7 @@ scripts/
 datos/
   candidatos.csv, candidatos_shas.json, seleccion_resumen.json   Salidas del paso 1
   trayectorias.json, exclusiones.csv                             Salidas del paso 2
-  mediciones/         Salidas del paso 3 (métricas, hallazgos, y estados)
+  mediciones/         Salidas del paso 3 (métricas, hallazgos, estados, y archivos)
   resultados/         Salidas del paso 4 y planillas de auditoría
 figuras/
   hangar.pdf, hangar.png      Figura 1, generada desde datos/resultados/
@@ -43,8 +43,10 @@ figuras/
 
 Los clones de los repositorios (`datos/repos/`, ~560 MB) y los archivos materializados de cada
 estado (`datos/estados/`, ~90 MB) no se distribuyen, porque contienen código fuente completo de
-proyectos de terceros bajo sus propias licencias (véase *Licencias*); el paso 3 los regenera
-desde GitHub.
+proyectos de terceros bajo sus propias licencias (véase *Licencias*). El paso 3 guarda en
+`datos/mediciones/` la información derivada que el análisis necesita de esos archivos: la huella
+de cada estado, si cada sentencia reportada aparece intacta en los estados vecinos, y las marcas
+de supresión por archivo. Por eso el análisis comienza desde los datos conservados.
 
 ## Requisitos
 
@@ -59,19 +61,49 @@ uv sync
 
 ## Reproducción
 
-### Pipeline completo (unos 12 minutos)
+### Desde los datos conservados (recomendado)
+
+El análisis parte de `datos/mediciones/` y `datos/trayectorias.json`, sin repetir la extracción
+ni requerir Java, PMD, o acceso a red:
 
 ```sh
-uv run python scripts/seleccionar_candidatos.py    # ~30 s
-uv run python scripts/reconstruir_trayectorias.py  # ~3 min, clona 20 repositorios sin blobs
-uv run python scripts/medir_estados.py             # ~8 min
-uv run python scripts/analizar.py                  # segundos
-uv run python scripts/figura_hangar.py             # Figura 1
+uv sync
+uv run python scripts/analizar.py       # RQ1–RQ3, en segundos
+uv run python scripts/figura_hangar.py  # Figura 1
 ```
 
-`analizar.py` requiere los estados materializados por el paso 3 y conserva las respuestas de
-auditoría ya registradas en `datos/resultados/`. Se comprobó que una ejecución completa desde
-una copia limpia reproduce byte a byte los archivos de `datos/`.
+Las salidas se escriben en `datos/resultados/` y `figuras/`, y deben coincidir con las versionadas
+(`git status` no muestra cambios). `analizar.py` conserva las respuestas de auditoría ya
+registradas.
+
+### Extracción completa (opcional, unos 12 minutos)
+
+Repite la selección, la reconstrucción, y la medición, y sobrescribe `datos/`:
+
+```sh
+./scripts/descargar_pmd.sh
+uv run python scripts/seleccionar_candidatos.py    # ~30 s, lee AIDev-pop desde Hugging Face
+uv run python scripts/reconstruir_trayectorias.py  # ~3 min, clona 20 repositorios sin blobs
+uv run python scripts/medir_estados.py             # ~8 min
+```
+
+Luego ejecute el análisis como en la sección anterior. Solo cambia `seleccion_resumen.json`, que
+registra la fecha de consulta.
+
+## Extracción y entorno
+
+| Paso | Fuente | Fecha (UTC) |
+| --- | --- | --- |
+| 1. Selección | AIDev-pop en Hugging Face, revisión `37bbe153…` | 2026-10-08 03:15 |
+| 2. Reconstrucción | GitHub (`git clone --filter=blob:none` y `pull/N/head`) | 2026-10-08 03:16–03:19 |
+| 3. Medición | Blobs descargados desde GitHub por SHA | 2026-10-08 03:19–03:27; repetida 05:41–05:43 para agregar los datos derivados |
+
+Los estados se identifican por SHA, por lo que una nueva extracción obtiene el mismo código
+mientras los repositorios y sus referencias `pull/N/head` sigan disponibles.
+
+Entorno de ejecución: Ubuntu 24.04.5 LTS (kernel 6.14), Python 3.14.5 gestionado con uv 0.11.19,
+OpenJDK 21.0.12.1, PMD 7.28.0, y Git 2.43.0. Las versiones de las dependencias de Python están
+fijadas en `uv.lock` (entre otras, pyarrow 25.0.1, fsspec 2026.9.0, y matplotlib 3.11.2).
 
 ## Resultados por pregunta
 

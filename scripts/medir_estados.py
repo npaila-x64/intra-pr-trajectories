@@ -8,15 +8,24 @@ umbral 1) y config/hallazgos.xml (reglas de hallazgos).
 Salida en datos/mediciones/:
 - metricas.csv: una fila por estado, archivo, y entidad (tipo o método).
 - hallazgos.csv: una fila por infracción, con su fragmento de código.
-- estados.csv: archivos presentes, analizados, y con error por estado.
+- estados.csv: archivos presentes, con error, y huella del contenido por estado.
+- archivos.csv: SHA-256 y marcas de supresión por estado y archivo.
+
+Además, cada hallazgo registra si su sentencia aparece intacta en el mismo
+archivo del estado distinto anterior y del siguiente. Con esta información, el
+paso 4 se ejecuta sin los archivos de código materializados, que no se
+distribuyen porque pertenecen a proyectos de terceros.
 """
 import csv
 import json
 import re
 import shutil
 import subprocess
+import hashlib
 import xml.etree.ElementTree as ET
 from pathlib import Path
+
+from comun import huella, normalizar, sentencia, supresiones
 
 ETAPA2 = Path(__file__).resolve().parents[1]
 DATOS = ETAPA2 / 'datos'
@@ -92,28 +101,66 @@ def medir(t, destino):
     return metricas, hallazgos, errores
 
 
+def distintos(destino, n):
+    """Huella de cada estado y, para cada uno, el estado distinto anterior y siguiente."""
+    huellas = [huella(destino / str(i)) for i in range(n)]
+    conservados = [i for i in range(n) if i == 0 or huellas[i] != huellas[i - 1]]
+    representante = {}
+    for i in range(n):
+        representante[i] = max(k for k in conservados if k <= i)
+    pos = {k: j for j, k in enumerate(conservados)}
+    anterior = {i: conservados[pos[representante[i]] - 1] if pos[representante[i]] > 0 else None
+                for i in range(n)}
+    siguiente = {i: conservados[pos[representante[i]] + 1]
+                 if pos[representante[i]] + 1 < len(conservados) else None for i in range(n)}
+    return huellas, anterior, siguiente
+
+
+def texto(destino, estado, archivo):
+    if estado is None:
+        return None
+    try:
+        return normalizar((destino / str(estado) / archivo).read_text(errors='replace'))
+    except OSError:
+        return ''
+
+
 def main():
     trayectorias = json.loads((DATOS / 'trayectorias.json').read_text())
     salida = DATOS / 'mediciones'
     estados_dir = DATOS / 'estados'
     salida.mkdir(exist_ok=True)
-    todas_m, todos_h, filas_e = [], [], []
+    todas_m, todos_h, filas_e, filas_a = [], [], [], []
     for t in trayectorias:
         destino = estados_dir / str(t['pr_id'])
         shutil.rmtree(destino, ignore_errors=True)
         presentes = materializar(t, destino)
         metricas, hallazgos, errores = medir(t, destino)
+        huellas, anterior, siguiente = distintos(destino, len(presentes))
+        for h in hallazgos:
+            s, e = sentencia(h['fragmento']), h['estado']
+            for clave, vecino in (('sentencia_en_anterior', anterior[e]),
+                                  ('sentencia_en_siguiente', siguiente[e])):
+                t_v = texto(destino, vecino, h['archivo'])
+                h[clave] = '' if t_v is None else s in t_v
         todas_m += metricas
         todos_h += hallazgos
         for i, rutas in presentes.items():
             filas_e.append({'pr_id': t['pr_id'], 'estado': i,
                             'sha': ([t['base']] + t['secuencia'])[i],
                             'archivos_presentes': len(rutas),
-                            'archivos_con_error': sum(1 for (e, _) in errores if e == i)})
+                            'archivos_con_error': sum(1 for (e, _) in errores if e == i),
+                            'huella': huellas[i]})
+            for r in rutas:
+                contenido = (destino / str(i) / r).read_bytes()
+                filas_a.append({'pr_id': t['pr_id'], 'estado': i, 'archivo': r,
+                                'sha256': hashlib.sha256(contenido).hexdigest(),
+                                'supresiones': supresiones(contenido.decode(errors='replace'))})
         print(f'{t["repo"]}#{t["numero"]}: {len(presentes)} estados, '
               f'{len(metricas)} métricas, {len(hallazgos)} hallazgos, {len(errores)} errores',
               flush=True)
-    for nombre, filas in [('metricas', todas_m), ('hallazgos', todos_h), ('estados', filas_e)]:
+    for nombre, filas in [('metricas', todas_m), ('hallazgos', todos_h), ('estados', filas_e),
+                          ('archivos', filas_a)]:
         with open(salida / f'{nombre}.csv', 'w', newline='') as f:
             w = csv.DictWriter(f, fieldnames=list(filas[0]))
             w.writeheader()

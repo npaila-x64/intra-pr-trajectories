@@ -87,7 +87,8 @@ def main():
         ax.text(-0.13, 1.0, letra, transform=ax.transAxes, fontsize=8, va='top', color=TINTA)
 
     SALIDA.parent.mkdir(exist_ok=True)
-    fig.savefig(SALIDA, bbox_inches='tight', pad_inches=0.02)
+    # Sin fecha de creación en los metadatos, para que la salida sea reproducible byte a byte.
+    fig.savefig(SALIDA, bbox_inches='tight', pad_inches=0.02, metadata={'CreationDate': None})
     fig.savefig(SALIDA.with_suffix('.png'), dpi=200, bbox_inches='tight', pad_inches=0.02)
     print(SALIDA)
 
