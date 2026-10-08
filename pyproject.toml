@@ -8,4 +8,5 @@ dependencies = [
     "fsspec>=2024.6",
     "aiohttp>=3.9",
     "requests>=2.32",
+    "matplotlib>=3.9",
 ]

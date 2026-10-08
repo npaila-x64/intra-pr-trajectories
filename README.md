@@ -30,12 +30,15 @@ scripts/
   reconstruir_trayectorias.py Paso 2: trayectorias con Git
   medir_estados.py    Paso 3: medición de cada estado con PMD
   analizar.py         Paso 4: análisis de RQ1, RQ2, y RQ3
+  figura_hangar.py    Figura 1 del informe (trayectoria de Hangar#1537)
   comun.py            Filtro de archivos Java de producción
 datos/
   candidatos.csv, candidatos_shas.json, seleccion_resumen.json   Salidas del paso 1
   trayectorias.json, exclusiones.csv                             Salidas del paso 2
   mediciones/         Salidas del paso 3 (métricas, hallazgos, y estados)
   resultados/         Salidas del paso 4 y planillas de auditoría
+figuras/
+  hangar.pdf, hangar.png      Figura 1, generada desde datos/resultados/
 ```
 
 Los clones de los repositorios (`datos/repos/`, ~560 MB) y los archivos materializados de cada
@@ -62,6 +65,7 @@ uv run python scripts/seleccionar_candidatos.py    # ~30 s
 uv run python scripts/reconstruir_trayectorias.py  # ~3 min, clona 20 repositorios sin blobs
 uv run python scripts/medir_estados.py             # ~8 min
 uv run python scripts/analizar.py                  # segundos
+uv run python scripts/figura_hangar.py             # Figura 1
 ```
 
 ### Opción B: solo el análisis
@@ -85,6 +89,7 @@ Todos los archivos están en `datos/resultados/`. `resumen.json` reúne las cifr
 | RQ2 | `rq2_enlaces.csv` | Cada enlace entre estados consecutivos y la etapa que lo produjo | Sección IV-C |
 | RQ2 | `auditoria_*.csv` | Muestras revisadas manualmente; `*_v1.csv` corresponde a la primera ronda | Sección IV-C |
 | RQ3 | `rq3_pr.csv` | Por PR: hallazgos transitorios, sustituciones con conteo igual, y excursiones | Tabla II, Sección IV-D |
+| RQ1–RQ3 | `figuras/hangar.pdf` | Trayectoria de tamaño y origen de los hallazgos de Hangar#1537 | Fig. 1 |
 
 ## Configuración del estudio
 
